@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Releway&display=swap');
+
+.About {
+  background-color: rgb(241, 241, 243);
+  padding-top: 130px;
+  padding-bottom: 130px;
+  margin-top: 40px;
+
+  .about {
+    h1 {
+      color: rgb(33, 62, 73);
+      font-family: 'Nothing You Could Do', cursive;
+      font-weight: bold;
+      padding-bottom: 100px;
+      text-shadow: 0px 0px 2px #686868,
+        0px 1px 1px #ddd,
+        0px 2px 1px #d6d6d6,
+        0px 3px 1px #ccc,
+        0px 4px 1px #c5c5c5,
+        0px 5px 1px #c1c1c1,
+        0px 6px 1px #bbb,
+        0px 7px 1px #777,
+        0px 8px 3px rgba(100, 100, 100, 0.4),
+        0px 9px 5px rgba(100, 100, 100, 0.1),
+        0px 10px 7px rgba(100, 100, 100, 0.15),
+        0px 11px 9px rgba(100, 100, 100, 0.2),
+        0px 12px 11px rgba(100, 100, 100, 0.25),
+        0px 13px 15px rgba(100, 100, 100, 0.3);
+    }
+
+    p {
+      text-align: left;
+      color: rgb(33, 62, 73);
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+    }
+
+    .photo {
+      margin-top: 60px;
+      margin-bottom: 100px;
+      box-shadow: 0px 0px 2px #686868,
+      0px 1px 1px #ddd,
+      0px 2px 1px #d6d6d6,
+      0px 3px 1px #ccc,
+      0px 4px 1px #c5c5c5,
+      0px 5px 1px #c1c1c1,
+      0px 6px 1px #bbb,
+      0px 7px 1px #777,
+      0px 8px 3px rgba(100, 100, 100, 0.4),
+      0px 9px 5px rgba(100, 100, 100, 0.1),
+      0px 10px 7px rgba(100, 100, 100, 0.15),
+      0px 11px 9px rgba(100, 100, 100, 0.2),
+      0px 12px 11px rgba(100, 100, 100, 0.25),
+      0px 13px 15px rgba(100, 100, 100, 0.3);
+      border-radius: 100%;
+    }
+  }
+}

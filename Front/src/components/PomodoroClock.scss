@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Releway&display=swap');
+
+.PomodoroClock {
+  background-color: rgb(33, 62, 73);
+  border-radius: 3px;
+  margin-bottom: 40px;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.507);
+
+  .pomodoroClock {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h2 {
+      font-family: 'Turret Road', cursive;
+      color: rgb(177, 194, 38);
+    }
+
+    h3#timer-label.timer {
+      font-size: 30px;
+    }
+
+    .timer {
+      font-family: 'Turret Road', cursive;
+      font-size: 60px;
+      color: rgb(177, 194, 38);
+      text-shadow: 0 0 5px rgba(241, 241, 243, 0.178);
+    }
+
+    button {
+      height: 50px;
+      width: 80px;
+      border-radius: 2px;
+      background-color: rgb(83, 180, 244);
+      border: none;
+      margin: 4px;
+      font-size: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      color: rgb(241, 241, 243);
+      box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.507);
+    }
+
+    button:hover {
+      background-color: rgb(66, 151, 207);
+      transition: .1s ease-out;
+    }
+
+    .setTimer-label {
+      font-family: 'Turret Road', cursive;
+      font-size: 30px;
+      color: rgb(177, 194, 38);
+      justify-content: center;
+    }
+
+    .setTimer-controls {
+      font-family: 'Turret Road', cursive;
+      font-size: 40px;
+      color: rgb(177, 194, 38);
+      text-shadow: 0 0 5px rgba(89, 195, 195, 0.5);
+    }
+
+    h3#session-length.setTimer-value {
+      margin-bottom: -10px;
+    }
+
+    h3#break-length.setTimer-value {
+      margin-bottom: -10px;
+    }
+
+    .setTimer-controls-btn {
+      height: 25px;
+      width: 40px;
+    }
+
+    .setTimer-value {
+      font-family: 'Turret Road', cursive;
+      font-size: 30px;
+      color: rgb(177, 194, 38);
+      text-shadow: 0 0 5px rgba(241, 241, 243, 0.178);
+    }
+  }
+}
