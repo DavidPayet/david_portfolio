@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="Footer">
       <Container className="footer">
         <Row>
-          <Col lg="12" md="12" sm="12">
+          <Col xl="12" lg="12" md="12" sm="12" xs="12">
             <a href="https://github.com/DavidPayet" target="_blank" rel="noopener noreferrer">
               <img src="/medias/github-icon.png" className="github-icon" alt="Github icon" />
             </a>
@@ -18,7 +18,7 @@ const Footer = () => {
           </Col>
         </Row>
         <Row>
-          <Col lg="12" md="12" sm="12">
+          <Col xl="12" lg="12" md="12" sm="12" xs="12">
             <p>©Copyright 2019 - All right reserved | David Payet</p>
           </Col>
         </Row>

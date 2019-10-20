@@ -9,10 +9,10 @@ const About = () => {
       <Container className="about">
         <h1>Bonjour, je suis David !</h1>
         <Row>
-          <Col lg="4" md="4" sm="12">
+          <Col xl="4" lg="4" md="4" sm="12" xs="12">
             <img className="photo" src="/medias/photo.png" alt="myphoto" />
           </Col>
-          <Col lg="8" md="8" sm="12">
+          <Col xl="8" lg="8" md="8" sm="12" xs="12">
             <p>En direction de nouvelles aventures, je me réoriente aujourd’hui vers le métier de développeur web.</p>
             <p>Après avoir suivi une formation de 5 mois à ce dernier, je poursuis mon apprentissage de manière autonome.</p>
             <p>J’utilise différents outils illustrés plus bas afin de mettre en &#x153;vre un site web de A à Z.</p>

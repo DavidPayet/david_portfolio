@@ -157,20 +157,20 @@ class SnakePage extends Component {
           </Row>
 
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <h1>Snake</h1>
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
 
           <Row>
-            <Col lg="3" md="3" sm="1" xs="1" />
+            <Col xl="3" lg="3" md="3" sm="1" xs="1" />
             <Col className="game-area" lg="6" md="6" sm="10" xs="10">
                 <Snake className="snake-dot" snakeDots={this.state.snakeDots} />
                 <SnakeFood className="snake-food" dot={this.state.food} />
             </Col>
-            <Col lg="3" md="3" sm="1" xs="1" />
+            <Col xl="3" lg="3" md="3" sm="1" xs="1" />
           </Row>
 
         </Container>

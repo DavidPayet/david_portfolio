@@ -38,23 +38,23 @@ class GifPage extends Component {
             </NavLink>
           </Row>
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <h1>Gifs Generator</h1>
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <p>{this.state.phrase}</p>
               <br />
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <img className="gifMedias" src={this.state.gif} alt="gif" />
               <br />
               <br />
@@ -62,7 +62,7 @@ class GifPage extends Component {
               <br />
               <br />
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
         </Container>
       </div>

@@ -42,15 +42,15 @@ class ToDoListPage extends Component {
       return (
         <div key={item} className="list">
           <Row className="todo">
-          <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+          <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
             {item} <button
               className="btn-delete"
               onClick={this.deleteTodo.bind(this, item)}>
               &#128465;
                   </button>
                   </Col>
-                  <Col lg="2" md="2" sm="1" xs="1" />
+                  <Col lxl="2" g="2" md="2" sm="1" xs="1" />
           </Row>
         </div>
       );
@@ -67,8 +67,8 @@ class ToDoListPage extends Component {
             </NavbarBrand>
           </Row>
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <h1>To Do List</h1>
               <Form>
                 <input
@@ -83,20 +83,20 @@ class ToDoListPage extends Component {
                 <Button className="btn-add" onClick={this.addTodo}>Ajouter</Button>
               </Form>
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
           <br />
           <br />
           <br />
           <br />
           <Row>
-          <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+          <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
             <span>
               {this.renderTodos()}
             </span>
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
         </Container>
       </div>

@@ -20,17 +20,17 @@ export default class Contact extends React.Component {
         <Container className="contact">
           <h1>Me contacter</h1>
             <Row>
-              <Col lg="3" md="3" sm="1" xs="1" />
-              <Col lg="6" md="6" sm="10" xs="10">
+              <Col xl="3" lg="3" md="3" sm="1" xs="1" />
+              <Col xl="6" lg="6" md="6" sm="10" xs="10">
               <img className="media" src="/medias/pont-de-pierre.jpg" alt="myphoto" />
               </Col>
-              <Col lg="3" md="3" sm="1" xs="1" />
+              <Col xl="3" lg="3" md="3" sm="1" xs="1" />
             </Row>
             <br />
             <br />
             <Row>
-              <Col lg="3" md="3" sm="1" xs="1" />
-              <Col lg="6" md="6" sm="10" xs="10" >
+              <Col xl="3" lg="3" md="3" sm="1" xs="1" />
+              <Col xl="6" lg="6" md="6" sm="10" xs="10" >
                 <p className="phrase">
                   Non.., je n'habite pas sous ce pont !..
                   <br />
@@ -43,7 +43,7 @@ export default class Contact extends React.Component {
                 </p>
 
               </Col>
-              <Col lg="3" md="3" sm="1" xs="1" />
+              <Col xl="3" lg="3" md="3" sm="1" xs="1" />
             </Row>
         </Container>
       </div>

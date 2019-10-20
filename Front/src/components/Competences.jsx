@@ -9,7 +9,7 @@ const Competences = () => {
       <Container className="competences">
         <h1>Les outils que j'utilise...</h1>
         <Row>
-          <Col className="tools" lg="5" md="6" sm="12" xs="12">
+          <Col className="tools" xl="5" lg="5" md="6" sm="12" xs="12">
             <h2>... pour le Front</h2>
             <img className="logos" src="/medias/logos/logo-html.png" alt="logo-html" />
             <img className="logos" src="/medias/logos/logo-css.png" alt="logo-css" />
@@ -17,13 +17,13 @@ const Competences = () => {
             <img className="logos" src="/medias/logos/logo-reactjs.png" alt="logo-reactjs" />
             <img className="logos" src="/medias/logos/logo-sass.png" alt="logo-sass" />
           </Col>
-          <Col lg="3" md="3" />
-          <Col lg="4" md="3" />
+          <Col xl="3" lg="3" md="3" />
+          <Col xl="4" lg="4" md="3" />
         </Row>
         <Row>
-        <Col lg="4" md="3" />
-        <Col lg="3" md="3" />
-          <Col className="tools" lg="5" md="6" sm="12" xs="12">
+        <Col xl="4" lg="4" md="3" />
+        <Col xl="3" lg="3" md="3" />
+          <Col className="tools" xl="5" lg="5" md="6" sm="12" xs="12">
           <h2>... et pour le Back</h2>
           <img className="logos" src="/medias/logos/logo-nodejs.png" alt="logo-nodejs" />
             <img className="logos" src="/medias/logos/logo-express.png" alt="logo-express" />

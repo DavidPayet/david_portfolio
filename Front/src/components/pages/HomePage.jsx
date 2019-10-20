@@ -17,7 +17,7 @@ const HomePage = () => {
       <NavBar />
       <Container className="homePage">
         <Row>
-          <Col lg="12" md="12" sm="12">
+          <Col xl="12" lg="12" md="12" sm="12" xs="12">
             <h1 className="lightSpeedIn">
               David payet
             </h1>

@@ -19,40 +19,40 @@ class TimerPage extends Component {
           </NavLink>
           </Row>
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <h1>Timers</h1>
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
           <Row>
-          <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+          <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <Counter />
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
           <br />
           <br />
           <br />
           <br />
           <Row>
-          <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+          <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <Chronometer />
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
           <br />
           <br />
           <br />
           <br />
           <Row>
-          <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+          <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <PomodoroClock />
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
         </Container>
       </div>

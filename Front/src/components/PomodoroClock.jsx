@@ -109,46 +109,46 @@ class PomodoroClock extends Component {
       <div className="PomodoroClock">
         <Container className="pomodoroClock">
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <h2>Pomodoro Clock</h2>
               <br />
               <br />
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
 
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <Timer
                 className="timer"
                 mode={this.state.mode}
                 time={moment(this.state.time).format("mm:ss")}
               />
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
           <br />
           <br />
           <Row>
-            <Col lg="4" md="4" sm="2" xs="2" />
-            <Col lg="2" md="2" sm="4" xs="4">
+            <Col xl="4" lg="4" md="4" sm="2" xs="2" />
+            <Col xl="2" lg="2" md="2" sm="4" xs="4">
               <button id="reset" onClick={this.handleReset}>&#8635;</button>
             </Col>
-            <Col lg="2" md="2" sm="4" xs="4">
+            <Col xl="2" lg="2" md="2" sm="4" xs="4">
               <Controls
                 active={this.state.active}
                 handleReset={this.handleReset}
                 handlePlayPause={this.handlePlayPause}
               />
             </Col>
-            <Col lg="4" md="4" sm="2" xs="2" />
+            <Col xl="4" lg="4" md="4" sm="2" xs="2" />
           </Row>
           <br />
           <br />
           <Row>
-            <Col lg="5" md="5" sm="5" xs="5">
+            <Col xl="5" lg="5" md="5" sm="5" xs="5">
               <SetTimer
                 type="session"
                 label="Session"
@@ -156,8 +156,8 @@ class PomodoroClock extends Component {
                 handleClick={this.handleSetTimers}
               />
             </Col>
-            <Col lg="2" md="2" sm="2" xs="2" />
-            <Col lg="5" md="5" sm="5" xs="5">
+            <Col xl="2" lg="2" md="2" sm="2" xs="2" />
+            <Col xl="5" lg="5" md="5" sm="5" xs="5">
               <SetTimer
                 type="break"
                 label="Break"

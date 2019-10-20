@@ -16,22 +16,22 @@ const Portfolio = () => {
       <Container className="portfolio">
         <h1>Quelques réalisations...</h1>
         <Row>
-          <Col lg="3" md="4" sm="12" xs="12">
+          <Col xl="3" lg="3" md="4" sm="12" xs="12">
             <ToDoListCard />
           </Col>
-          <Col lg="3" md="4" sm="12" xs="12">
+          <Col xl="3" lg="3" md="4" sm="12" xs="12">
             <GifCard />
           </Col>
-          <Col lg="3" md="4" sm="12" xs="12">
+          <Col xl="3" lg="3" md="4" sm="12" xs="12">
             <CalculatorCard />
           </Col>
-          <Col lg="3" md="4" sm="12" xs="12">
+          <Col xl="3" lg="3" md="4" sm="12" xs="12">
             <TimerCard />
           </Col>
-          <Col lg="3" md="4" sm="12" xs="12">
+          <Col xl="3" lg="3" md="4" sm="12" xs="12">
             <TicTacToeCard />
           </Col>
-          <Col lg="3" md="4" sm="12" xs="12">
+          <Col xl="3" lg="3" md="4" sm="12" xs="12">
             <SnakeCard />
           </Col>
         </Row>

@@ -71,39 +71,39 @@ export default class TicTacToePage extends Component {
             </Row>
 
             <Row>
-              <Col lg="2" md="2" sm="1" xs="1" />
-              <Col lg="8" md="8" sm="10" xs="10">
+              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+              <Col xl="8" lg="8" md="8" sm="10" xs="10">
                 <h1>Tic Tac Toe</h1>
               </Col>
-              <Col lg="2" md="2" sm="1" xs="1" />
+              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             </Row>
 
             <Row>
-              <Col lg="2" md="2" sm="1" xs="1" />
-              <Col lg="8" md="8" sm="10" xs="10">
+              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+              <Col xl="8" lg="8" md="8" sm="10" xs="10">
                 <h3>{status}</h3>
               </Col>
-              <Col lg="2" md="2" sm="1" xs="1" />
+              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             </Row>
 
             <Row>
-              <Col lg="2" md="2" sm="1" xs="1"/>
-              <Col className="game" lg="8" md="8" sm="10" xs="10">
+              <Col xl="2" lg="2" md="2" sm="1" xs="1"/>
+              <Col className="game" xl="8" lg="8" md="8" sm="10" xs="10">
                 <TicTacToeBoard
                   onClick={(i) => this.handleClick(i)}
                   squares={current.squares}
                 />
               </Col>
-              <Col lg="2" md="2" sm="1" xs="1"/>
+              <Col xl="2" lg="2" md="2" sm="1" xs="1"/>
             </Row>
 
             <Row>
-              <Col lg="2" md="2" sm="1" xs="1" />
+              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
               <Col className="game-info" lg="8" md="8" sm="10" xs="10">
                 
                 <ul>{moves}</ul>
               </Col>
-              <Col lg="2" md="2" sm="1" xs="1" />
+              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             </Row>
 
           </Container>

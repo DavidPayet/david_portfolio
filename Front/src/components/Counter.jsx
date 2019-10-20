@@ -30,34 +30,34 @@ class Counter extends Component {
       <div className="Counter">
         <Container className="counter">
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <h2>Counter</h2>
               <br />
               <br />
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
           <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <span>{this.state.result}</span>
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
           <br />
           <br />
           <Row>
-            <Col lg="4" md="4" sm="2" xs="2" />
-            <Col lg="2" md="2" sm="4" xs="4">
+            <Col xl="4" lg="4" md="4" sm="2" xs="2" />
+            <Col xl="2" lg="2" md="2" sm="4" xs="4">
               {/*eslint-disable-next-line*/}
               <button onClick={this.decrement}>👎🏽</button>
             </Col>
-            <Col lg="2" md="2" sm="4" xs="4">
+            <Col xl="2" lg="2" md="2" sm="4" xs="4">
               {/*eslint-disable-next-line*/}
               <button onClick={this.increment}>👍🏽</button>
             </Col>
-            <Col lg="4" md="4" sm="2" xs="2" />
+            <Col xl="4" lg="4" md="4" sm="2" xs="2" />
           </Row>
         </Container>
       </div>

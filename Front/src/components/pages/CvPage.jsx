@@ -13,19 +13,19 @@ const CvPage = () => {
           </NavLink>
         </Row>
         <Row>
-            <Col lg="2" md="2" sm="1" xs="1" />
-            <Col lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <h1>Télécharger mon CV</h1>
             </Col>
-            <Col lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
 
         <Row>
-          <Col lg="0" md="0" sm="0" xs="0" />
-          <Col lg="12" md="12" sm="12" xs="12">
+          <Col xl="0" lg="0" md="0" sm="0" xs="0" />
+          <Col xl="12" lg="12" md="12" sm="12" xs="12">
             <iframe height="800px" width="600px" src="/medias/curriculum_vitae.pdf" align="middle" title="cv" />
           </Col>
-          <Col lg="0" md="0" sm="0" xs="0" />
+          <Col xl="0" lg="0" md="0" sm="0" xs="0" />
         </Row>
       </Container>
     </div>
