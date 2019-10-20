@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
 import CvPage from './components/pages/CvPage';
 import ToDoListPage from './components/pages/ToDoListPage';
@@ -15,15 +15,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/" component={HomePage} />
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/cv" component={CvPage} />
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/todolist" component={ToDoListPage} />
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/gif-generator" component={GifPage} />
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/calculator" component={CalculatorPage} />
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/timers" component={TimerPage} />
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/snake" component={SnakePage} />
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/tictactoe" component={TicTacToePage} />
-        
+        <Switch>
+          <Route onUpdate={window.scrollTo(0, 0)} exact path="/" component={HomePage} />
+          <Route onUpdate={window.scrollTo(0, 0)} exact path="/cv" component={CvPage} />
+          <Route onUpdate={window.scrollTo(0, 0)} exact path="/todolist" component={ToDoListPage} />
+          <Route onUpdate={window.scrollTo(0, 0)} exact path="/gif-generator" component={GifPage} />
+          <Route onUpdate={window.scrollTo(0, 0)} exact path="/calculator" component={CalculatorPage} />
+          <Route onUpdate={window.scrollTo(0, 0)} exact path="/timers" component={TimerPage} />
+          <Route onUpdate={window.scrollTo(0, 0)} exact path="/snake" component={SnakePage} />
+          <Route onUpdate={window.scrollTo(0, 0)} exact path="/tictactoe" component={TicTacToePage} />
+        </Switch>
       </div>
     );
   }
