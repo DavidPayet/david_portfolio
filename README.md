@@ -2,13 +2,13 @@
 
 ## Installation
 
-Use npm to init the projet Front folder. All dependencies are listed in their respective package.json.
+Use npm to init the projet. All dependencies are listed in package.json file.
 
 ```javascript
 npm i
 ```
 
-Then create a .env in FRONT root directory 
+Then create a .env in root directory 
 
 ```env
 SKIP_PREFLIGHT_CHECK=true
