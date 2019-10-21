@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TicTacToeSquare from '../components/TicTacToeSquare';
+import TicTacToeSquare from './TicTacToeSquare';
 
 export default class TicTacToeBoard extends Component {
 
