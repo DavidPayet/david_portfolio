@@ -25,6 +25,10 @@ const HomePage = () => {
             <h2 className="zoomInUp">
               Développeur Web Jr
             </h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="bottom-arrow" xl="12" lg="12" md="12" sm="12" xs="12">
             <Link
               activeClass="active"
               to="about-section"
@@ -33,7 +37,7 @@ const HomePage = () => {
               offset={-70}
               duration={500}
             >
-              <span className="bottom-arrow">&#x2303;</span>
+              <span >&#x2303;</span>
             </Link>
           </Col>
         </Row>
