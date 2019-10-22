@@ -21,11 +21,9 @@ const CvPage = () => {
           </Row>
 
         <Row>
-          {/* <Col xl="0" lg="0" md="0" sm="0" xs="0" /> */}
           <Col  className="cv" xl="12" lg="12" md="12" sm="12" xs="12">
-            <iframe height="480px" max-width="100%" src="/medias/curriculum_vitae.pdf" align="middle" title="cv" />
+            <iframe height="430px" max-width="auto" src="/medias/curriculum_vitae.pdf" align="middle" title="cv" />
           </Col>
-          {/* <Col xl="0" lg="0" md="0" sm="0" xs="0" /> */}
         </Row>
       </Container>
     </div>
