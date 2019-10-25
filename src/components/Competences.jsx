@@ -14,7 +14,8 @@ const Competences = () => {
             <img className="logos" src="/medias/logos/logo-html.png" alt="logo-html" />
             <img className="logos" src="/medias/logos/logo-css.png" alt="logo-css" />
             <img className="logos" src="/medias/logos/logo-js.png" alt="logo-js" />
-            <img className="logos" src="/medias/logos/logo-reactjs.png" alt="logo-reactjs" />
+            <img className="logos" src="/medias/logos/logo-react.png" alt="logo-react" />
+            <img className="logos" src="/medias/logos/logo-reactstrap.png" alt="logo-reactstrap" />
             <img className="logos" src="/medias/logos/logo-sass.png" alt="logo-sass" />
           </Col>
           <Col xl="7" lg="7" md="6" />
