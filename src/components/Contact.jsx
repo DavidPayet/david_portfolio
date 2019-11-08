@@ -32,14 +32,12 @@ export default class Contact extends React.Component {
               <Col xl="3" lg="3" md="3" sm="1" xs="1" />
               <Col xl="6" lg="6" md="6" sm="10" xs="10" >
                 <p className="phrase">
-                  Non.., je n'habite pas sous ce pont !..
+                  Je serai heureux de m'entretenir avec vous pour vous expliquer mon parcours et vous démontrer l'étendu de mes compétences.
                   <br />
                   <br />
-                  En revanche vous pouvez m'écrire
-                    <a className="email" href="mailto:davidpayet570@gmail.com"> ici</a>
-                  <br />
-                  <br />
-                  Je serai heureux de vous lire et c'est avec plaisir que je vous répondrai.
+                  Vous pouvez m'écrire
+                    <a className="email" href="mailto:davidpayet570@gmail.com"> ici </a>
+                  et c'est avec joie que je vous répondrai.
                 </p>
 
               </Col>

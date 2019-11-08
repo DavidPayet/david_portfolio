@@ -13,10 +13,10 @@ const About = () => {
             <img className="photo" src="/medias/photo.png" alt="myphoto" />
           </Col>
           <Col xl="8" lg="8" md="8" sm="12" xs="12">
-            <p>En direction de nouvelles aventures, je me réoriente aujourd’hui vers le métier de développeur web.</p>
-            <p>Après avoir suivi une formation de 5 mois à ce dernier, je poursuis mon apprentissage de manière autonome.</p>
-            <p>J’utilise différents outils illustrés plus bas afin de mettre en &#x153;vre un site web de A à Z.</p>
-            <p>Ma curiosité et ma soif d’apprendre affectionnent particulièrement l’étendue des possibilités qu’offre ce domaine.</p>
+            <p>En quête de nouvelles aventures, je me réoriente aujourd’hui vers le métier de développeur web.</p>
+            <p>Après avoir suivi une formation de 5 mois dans ce domaine, je poursuis mon apprentissage de manière autonome.</p>
+            <p>J’utilise différents outils illustrés plus bas afin de mettre en &#x153;uvre un site web de A à Z.</p>
+            <p>Ma curiosité et ma soif d’apprendre affectionnent particulièrement l’étendue des possibilités qu’offre ce métier d'aujourd'hui et de demain.</p>
             <p>Je souhaite par ailleurs mettre à profit mes compétences au sein d’une entreprise et ainsi continuer ma progression en apprenant d’avantage grâce à vous.</p>
           </Col>
         </Row>
