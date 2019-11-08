@@ -83,7 +83,7 @@ export default class NavBar extends React.Component {
                 Contact
               </Link>
               <NavItem>
-                <NavLink href="/cv">Curriculum vitae</NavLink>
+                <NavLink className="section-link" href="/cv">Mon CV</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

@@ -19,7 +19,7 @@ const Footer = () => {
         </Row>
         <Row>
           <Col xl="12" lg="12" md="12" sm="12" xs="12">
-            <p>©Copyright 2019 - All right reserved | David Payet</p>
+            <p>©Copyright 2019 - All right reserved | Davi<img className="dp-logo" src="/medias/dp-logo.png" alt="dp-logo" />ayet</p>
           </Col>
         </Row>
       </Container>
