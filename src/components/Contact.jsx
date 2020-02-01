@@ -32,7 +32,7 @@ export default class Contact extends React.Component {
               <Col xl="3" lg="3" md="3" sm="1" xs="1" />
               <Col xl="6" lg="6" md="6" sm="10" xs="10" >
                 <p className="phrase">
-                  Je serai heureux de m'entretenir avec vous pour vous expliquer mon parcours et vous démontrer l'étendu de mes compétences.
+                  Je serai heureux de m'entretenir avec vous pour vous expliquer mon parcours et vous montrer l'étendue de mes compétences.
                   <br />
                   <br />
                   Vous pouvez m'écrire
