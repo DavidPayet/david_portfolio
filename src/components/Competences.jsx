@@ -9,21 +9,20 @@ const Competences = () => {
       <Container className="competences">
         <h1>Les outils que j'utilise...</h1>
         <Row>
-          <Col className="tools" xl="5" lg="5" md="6" sm="12" xs="12">
+          <Col className="tools" xl="5" lg="5" md="6" sm="10" xs="10">
             <h2>... pour le Front</h2>
             <img className="logos" src="/medias/logos/logo-html.png" alt="logo-html" />
             <img className="logos" src="/medias/logos/logo-css.png" alt="logo-css" />
             <img className="logos" src="/medias/logos/logo-js.png" alt="logo-js" />
-            <img className="logos" src="/medias/logos/logo-reactjs.png" alt="logo-reactjs" />
+            <img className="logos" src="/medias/logos/logo-react.png" alt="logo-react" />
+            <img className="logos" src="/medias/logos/logo-reactstrap.png" alt="logo-reactstrap" />
             <img className="logos" src="/medias/logos/logo-sass.png" alt="logo-sass" />
           </Col>
-          <Col xl="3" lg="3" md="3" />
-          <Col xl="4" lg="4" md="3" />
+          <Col xl="7" lg="7" md="6" />
         </Row>
         <Row>
-        <Col xl="4" lg="4" md="3" />
-        <Col xl="3" lg="3" md="3" />
-          <Col className="tools" xl="5" lg="5" md="6" sm="12" xs="12">
+        <Col className="empty-col" xl="7" lg="7" md="6" />
+          <Col className="tools" xl="5" lg="5" md="6" sm="10" xs="10">
           <h2>... et pour le Back</h2>
           <img className="logos" src="/medias/logos/logo-nodejs.png" alt="logo-nodejs" />
             <img className="logos" src="/medias/logos/logo-express.png" alt="logo-express" />

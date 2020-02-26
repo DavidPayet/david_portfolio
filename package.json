@@ -5,10 +5,11 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
+    "netlify-cli": "^2.36.0",
+    "node-sass": "^4.13.1",
     "react": "^16.9.0",
+    "react-calendar": "^2.19.2",
     "react-dom": "^16.9.0",
-    "react-pdf": "^4.1.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.4.0",
     "react-scroll": "^1.7.13",

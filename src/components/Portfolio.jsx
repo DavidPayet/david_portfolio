@@ -7,6 +7,8 @@ import CalculatorCard from './CalculatorCard';
 import TimerCard from './TimerCard';
 import SnakeCard from './SnakeCard';
 import TicTacToeCard from './TicTacToeCard';
+import ChessPlayersCard from './ChessPlayersCard';
+import DatePickerCard from './DatePickerCard';
 
 import './Portfolio.scss';
 
@@ -33,6 +35,12 @@ const Portfolio = () => {
           </Col>
           <Col xl="3" lg="3" md="4" sm="12" xs="12">
             <SnakeCard />
+          </Col>
+          <Col xl="3" lg="3" md="4" sm="12" xs="12">
+            <ChessPlayersCard />
+          </Col>
+          <Col xl="3" lg="3" md="4" sm="12" xs="12">
+            <DatePickerCard />
           </Col>
         </Row>
       </Container>
