@@ -1,81 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
 
 .NavBar {
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: rgb(177, 194, 38);
+  margin-top: -60px;
+  height: 50px;
+  
 
-  .menu {
-    padding-top: 0px;
-    padding-bottom: 0px;
-
-    .home {
-      a.nav-link {
-        padding: 0px;
-      }
-
-      .dp-logo {
-        height: 80px;
-      }
-    }
+  .dp-logo {
+    height: 40px;
   }
 
-
-  .ml-auto {
-    a.section-link {
-      color: rgb(33, 62, 73);
-      font-size: 17px;
-      background-color: rgb(177, 194, 38);
-      cursor: pointer;
-      padding-right: 15px;
-      padding-left: 15px;
-      padding-top: 8px;
-      display: inline-block;
-    }
-
-    a.section-link:hover {
-      color: rgb(33, 62, 73);
-    }
-
-    a.section-link::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2px;
-      background: rgb(33, 62, 73);
-      transition: width .3s;
-    }
-
-    a.section-link:hover::after {
-      width: 100%;
-    }
-
-
-    a {
-      color: rgb(33, 62, 73);
-      font-size: 17px;
-      background-color: rgb(177, 194, 38);
-    }
-
-    a.nav-link {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
+  .navbar-light .navbar-toggler {
+    border: none;
   }
 
-  button.navbar-toggler {
-    border-color: rgb(33, 62, 73);
+  a.section-link {
+    color: rgb(33, 62, 73);
+    font-family: "Garathri";
+    font-size: 17px;
+    cursor: pointer;
+    padding-top: 8px;
+    text-align: right;
+  }
+
+  a.section-link:hover {
+    color: rgb(33, 62, 73);
   }
 
   button.navbar-toggler:focus {
     outline: none;
   }
 
-  ul.ml-auto.navbar-nav {
-    margin-top: 7px;
-    padding-top: 0px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-  }
 }

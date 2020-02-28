@@ -1,30 +1,50 @@
-import React, { useState } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import React from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from 'reactstrap';
 import { Link } from "react-scroll";
 
 import './NavBar.scss';
 
-const NavBar = (props) => {
-  const [collapsed, setCollapsed] = useState(true);
+export default class NavBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false
+    }
+    this.toggle = this.toggle.bind(this);
+  }
 
-  const toggleNavbar = () => setCollapsed(!collapsed);
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
 
-  return (
-    <div className="NavBar">
-      <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">
-        <img className="dp-logo" src="/medias/dp-logo.png" alt="dp-logo" />
-        </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-        <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
-          <Link
+  render() {
+    const { isOpen } = this.state
+    return (
+      <div className="NavBar">
+        <Navbar className="menu" expand="md">
+          <NavbarBrand className="home" href="/">
+            <img className="dp-logo" src="/medias/dp-logo.png" alt="dp-logo" />
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <Link
                 className="section-link"
                 activeClass="active"
                 to="about-section"
                 spy={true}
                 smooth={true}
-                offset={70}
+                offset={-70}
                 duration={500}
               >
                 A propos
@@ -35,7 +55,7 @@ const NavBar = (props) => {
                 to="competences-section"
                 spy={true}
                 smooth={true}
-                offset={70}
+                offset={-70}
                 duration={500}
               >
                 Compétences
@@ -46,7 +66,7 @@ const NavBar = (props) => {
                 to="portfolio-section"
                 spy={true}
                 smooth={true}
-                offset={70}
+                offset={-70}
                 duration={500}
               >
                 Portfolio
@@ -57,7 +77,7 @@ const NavBar = (props) => {
                 to="contact-section"
                 spy={true}
                 smooth={true}
-                offset={70}
+                offset={-70}
                 duration={500}
               >
                 Contact
@@ -65,11 +85,12 @@ const NavBar = (props) => {
               <NavItem>
                 <NavLink className="section-link" href="/cv">Mon CV</NavLink>
               </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
-  );
-}
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 
-export default NavBar;
+
+}
