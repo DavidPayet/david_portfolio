@@ -1,6 +1,5 @@
 .BackToTopButton {
   background-color: transparent;
-  width: fit-content;
   opacity: 0.7;
   position: fixed;
   bottom: 1rem;
@@ -32,7 +31,7 @@
     margin: 0;
   }
 
-  @media screen and (max-width: 767px) {
+  /* @media screen and (max-width: 767px) {
     display: none;
-  }
+  } */
 }
