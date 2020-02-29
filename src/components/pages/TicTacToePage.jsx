@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, NavLink } from 'reactstrap';
+import { Container, Row, Col/* , NavLink  */} from 'reactstrap';
 import TicTacToeBoard from '../TicTacToeBoard';
+import NavApp from '../NavApp';
 
 import './TicTacToePage.scss';
 
@@ -63,12 +64,13 @@ export default class TicTacToePage extends Component {
     }
       return (
         <div className="TicTacToePage">
+          <NavApp />
           <Container className="ticTacToePage">
-            <Row>
+            {/* <Row>
               <NavLink className="home" href="/">
                 <img className="dp-logo" src="/medias/dp-logo.png" alt="dp-logo" />
               </NavLink>
-            </Row>
+            </Row> */}
 
             <Row>
               <Col xl="2" lg="2" md="2" sm="1" xs="1" />

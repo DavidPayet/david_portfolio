@@ -1,17 +1,14 @@
 import React from 'react';
-import { Container, NavLink, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+import NavApp from '../NavApp';
 
 import './CvPage.scss';
 
 const CvPage = () => {
   return (
     <div className="CvPage">
+      <NavApp />
       <Container className="cvPage">
-        <Row>
-          <NavLink className="home" href="/">
-            <img className="dp-logo" src="/medias/dp-logo.png" alt="dp-logo" />
-          </NavLink>
-        </Row>
         <Row>
           <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           <Col xl="8" lg="8" md="8" sm="10" xs="10">
