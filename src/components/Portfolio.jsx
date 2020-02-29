@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
-
+import { Container } from 'reactstrap';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import ToDoListCard from './ToDoListCard';
 import GifCard from './GifCard';
 import CalculatorCard from './CalculatorCard';
@@ -12,37 +13,46 @@ import DatePickerCard from './DatePickerCard';
 
 import './Portfolio.scss';
 
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+    slidesToSlide: 4, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
+
 const Portfolio = () => {
   return (
     <div className="Portfolio" id="portfolio-section">
       <Container className="portfolio">
         <h1>Quelques réalisations...</h1>
-        <Row>
-          <Col xl="3" lg="3" md="4" sm="12" xs="12">
-            <ToDoListCard />
-          </Col>
-          <Col xl="3" lg="3" md="4" sm="12" xs="12">
-            <GifCard />
-          </Col>
-          <Col xl="3" lg="3" md="4" sm="12" xs="12">
-            <CalculatorCard />
-          </Col>
-          <Col xl="3" lg="3" md="4" sm="12" xs="12">
-            <TimerCard />
-          </Col>
-          <Col xl="3" lg="3" md="4" sm="12" xs="12">
-            <TicTacToeCard />
-          </Col>
-          <Col xl="3" lg="3" md="4" sm="12" xs="12">
-            <SnakeCard />
-          </Col>
-          <Col xl="3" lg="3" md="4" sm="12" xs="12">
-            <ChessPlayersCard />
-          </Col>
-          <Col xl="3" lg="3" md="4" sm="12" xs="12">
-            <DatePickerCard />
-          </Col>
-        </Row>
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          draggable={true}
+          showDots={true}
+          className="carousel"
+        >
+          <ToDoListCard />
+          <TicTacToeCard />
+          <CalculatorCard />
+          <TimerCard />
+          <SnakeCard />
+          <GifCard />
+          <ChessPlayersCard />
+          <DatePickerCard />
+        </Carousel>
       </Container>
     </div>
   );

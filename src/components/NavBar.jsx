@@ -18,6 +18,7 @@ const NavBar = (props) => {
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
+            <NavItem>
           <Link
                 className="section-link"
                 activeClass="active"
@@ -29,6 +30,9 @@ const NavBar = (props) => {
               >
                 A propos
               </Link>
+              <br />
+              </NavItem>
+              <NavItem>
               <Link
                 className="section-link"
                 activeClass="active"
@@ -40,6 +44,8 @@ const NavBar = (props) => {
               >
                 Compétences
               </Link>
+              </NavItem>
+              <NavItem>
               <Link
                 className="section-link"
                 activeClass="active"
@@ -51,6 +57,8 @@ const NavBar = (props) => {
               >
                 Portfolio
               </Link>
+              </NavItem>
+              <NavItem>
               <Link
                 className="section-link"
                 activeClass="active"
@@ -62,6 +70,7 @@ const NavBar = (props) => {
               >
                 Contact
               </Link>
+              </NavItem>
               <NavItem>
                 <NavLink className="section-link" href="/cv">Mon CV</NavLink>
               </NavItem>

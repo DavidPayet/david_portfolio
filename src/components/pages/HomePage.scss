@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 .HomePage {
   position: absolute;
@@ -33,7 +33,7 @@
         h1 {
           font-size: 70px;
           color: rgb(241, 241, 243);
-          font-family: "Gayathri";
+          font-family: "Lato";
           letter-spacing: .1rem;
           text-shadow: 0px 0px 2px #686868,
             0px 1px 1px rgb(33, 62, 73),
@@ -116,7 +116,7 @@
 
         h2 {
           color: rgb(241, 241, 243);
-          font-family: "gayathri";
+          font-family: "Lato";
           letter-spacing: .1rem;
           text-shadow: 0px 0px 2px #686868,
             0px 1px 1px rgb(33, 62, 73),
@@ -183,7 +183,7 @@
 
     .bottom-arrow {
       font-size: 40px;
-      color: rgb(33, 62, 73);;
+      color: rgb(33, 62, 73);
       height: 40px;
       -webkit-animation: sdb05 2s infinite;
       animation: sdb05 2s infinite;

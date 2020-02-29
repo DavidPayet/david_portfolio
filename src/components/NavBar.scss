@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 .NavBar {
   position: fixed;
@@ -6,7 +6,7 @@
   z-index: 1;
   margin-top: -60px;
   height: 50px;
-  
+
 
   .dp-logo {
     height: 40px;
@@ -17,20 +17,31 @@
   }
 
   a.section-link {
-    color: rgb(33, 62, 73);
-    font-family: "Garathri";
+    color: rgb(241, 241, 243);
+    font-family: "Lato";
     font-size: 17px;
     cursor: pointer;
     padding-top: 8px;
-    text-align: right;
+    float: right;
+    background-color: rgb(33, 62, 73);
+    width: 150px;
   }
 
   a.section-link:hover {
-    color: rgb(33, 62, 73);
+    color: rgb(241, 241, 243);
   }
 
   button.navbar-toggler:focus {
     outline: none;
   }
 
+  a.section-link.nav-link {
+    color: rgb(241, 241, 243);
+    cursor: pointer;
+    align-items: right;
+  }
+
+  a.section-link.nav-link:hover {
+    color: rgb(241, 241, 243);
+  }
 }

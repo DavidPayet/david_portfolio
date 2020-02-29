@@ -37,7 +37,7 @@ const HomePage = () => {
                 to="about-section"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={70}
                 duration={500}
               >
                 <span >&#x2303;</span>
