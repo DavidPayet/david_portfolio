@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 .DatePickerPage {
-  background: linear-gradient(to left, #c5d5cb, #e3e0cf);
   min-height: 800px;
+  position: absolute;
+  padding-top: 70px;
+  width: 100%;
+  background: linear-gradient(to left, #c5d5cb, #e3e0cf);
 
   .datePickerPage {
     .home {

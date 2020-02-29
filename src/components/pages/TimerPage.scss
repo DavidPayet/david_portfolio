@@ -2,8 +2,11 @@
 
 
 .TimerPage {
-  background: linear-gradient(to left, #c5d5cb, #e3e0cf);
   padding-bottom: 120px;
+  position: absolute;
+  padding-top: 70px;
+  width: 100%;
+  background: linear-gradient(to left, #c5d5cb, #e3e0cf);
   
   .timerPage {
     .home {
