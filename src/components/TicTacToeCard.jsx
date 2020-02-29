@@ -14,7 +14,7 @@ const TicTacToeCard = () => {
     <div className="Card">
       <NavLink href="/tictactoe">
         <Card className="card">
-          <CardImg top width="100%" src="/medias/tictactoe-img.png" alt="ticTacToe-img" />
+          <CardImg top width="100%" src="/medias/tictactoe-img.jpg" alt="ticTacToe-img" />
           <CardBody>
             <CardTitle className="title" >Tic Tac Toe</CardTitle>
 

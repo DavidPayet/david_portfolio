@@ -14,7 +14,7 @@ const TimerCard = () => {
     <div className="Card">
       <NavLink href="/timers" >
       <Card className="card">
-        <CardImg top width="100%" src="/medias/timer.png" alt="timer-img" />
+        <CardImg top width="100%" src="/medias/timer.jpg" alt="timer-img" />
         <CardBody>
           <CardTitle className="title" >Timers</CardTitle>
         </CardBody>
