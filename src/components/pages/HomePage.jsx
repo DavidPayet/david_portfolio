@@ -21,7 +21,7 @@ const HomePage = () => {
               <img src="/medias/picture5.jpg" alt="background" className="img" />
               <div className="titre">
                 <h1 className="lightSpeedIn">
-                  David payet
+                  David Payet
               </h1>
                 <br />
                 <h2 className="zoomInUp">
