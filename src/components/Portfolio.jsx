@@ -10,6 +10,7 @@ import SnakeCard from './SnakeCard';
 import TicTacToeCard from './TicTacToeCard';
 import ChessPlayersCard from './ChessPlayersCard';
 import DatePickerCard from './DatePickerCard';
+import Dpy1fCard from './Dpy1fCard';
 
 import './Portfolio.scss';
 
@@ -44,6 +45,7 @@ const Portfolio = () => {
           showDots={true}
           className="carousel"
         >
+          <Dpy1fCard />
           <ToDoListCard />
           <TicTacToeCard />
           <CalculatorCard />
