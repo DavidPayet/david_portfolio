@@ -23,8 +23,21 @@
       .react-multi-carousel-dot-list {
         .react-multi-carousel-dot button {
           outline: none;
+          border: none;
+          height: 4px;
+          width: 30px;
+          border-radius: 1px;
+          background: rgba(33, 62, 73, 0.205);
+        }
+
+        .react-multi-carousel-dot--active button {
+          background: rgb(33, 62, 73);
         }
       }
+    }
+
+    .react-multi-carousel-list.carousel {
+      padding-bottom: 50px;
     }
   }
 
