@@ -11,6 +11,7 @@ import TicTacToeCard from './TicTacToeCard';
 import ChessPlayersCard from './ChessPlayersCard';
 import DatePickerCard from './DatePickerCard';
 import Dpy1fCard from './Dpy1fCard';
+import ImcCard from './ImcCard';
 
 import './Portfolio.scss';
 
@@ -46,6 +47,7 @@ const Portfolio = () => {
           className="carousel"
         >
           <Dpy1fCard />
+          <ImcCard />
           <ToDoListCard />
           <TicTacToeCard />
           <CalculatorCard />

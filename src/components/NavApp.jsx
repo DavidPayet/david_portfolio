@@ -18,6 +18,9 @@ const NavApp = (props) => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
+              <NavLink className="section-link" href="/imc">IMC App</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink className="section-link" href="/todolist">To Do List</NavLink>
             </NavItem>
             <NavItem>

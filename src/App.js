@@ -10,6 +10,7 @@ import SnakePage from './components/pages/SnakePage';
 import TicTacToePage from './components/pages/TicTacToePage';
 import ChessPlayersPage from './components/pages/ChessPlayersPage';
 import DatePickerPage from './components/pages/DatePickerPage';
+import ImcPage from './components/pages/ImcPage';
 
 import './App.scss';
 
@@ -28,6 +29,7 @@ class App extends Component {
           <Route onUpdate={window.scrollTo(0, 0)} exact path="/tictactoe" component={TicTacToePage} />
           <Route onUpdate={window.scrollTo(0, 0)} exact path="/chessplayers" component={ChessPlayersPage} />
           <Route onUpdate={window.scrollTo(0, 0)} exact path="/datepicker" component={DatePickerPage} />
+          <Route onUpdate={window.scrollTo(0, 0)} exact path="/imc" component={ImcPage} />
         </Switch>
       </div>
     );
