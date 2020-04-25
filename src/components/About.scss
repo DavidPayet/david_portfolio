@@ -4,7 +4,6 @@
   background-color: rgb(241, 241, 243);
   padding-top: 130px;
   padding-bottom: 130px;
-  margin-top: 40px;
 
   .about {
     h1 {
@@ -26,7 +25,8 @@
       width: 70%;
       height: auto;
       background: linear-gradient(to left, #c5d5cb, #e3e0cf);
-      border-radius: 80px 80px 80px 0px;
+      //border-radius: 80px 80px 80px 0px;
+      border-radius: 92% 8% 92% 8% / 65% 34% 66% 35% ;
     }
   }
 }
