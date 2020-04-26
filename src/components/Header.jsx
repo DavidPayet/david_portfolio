@@ -26,6 +26,7 @@ function Header() {
             <Row className="bottom-arrow">
             <Col xl="12" lg="12" md="12" sm="12" xs="12">
               <Link
+                className="arrow"
                 activeClass="active"
                 to="about-section"
                 spy={true}

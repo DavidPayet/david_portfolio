@@ -13,13 +13,13 @@ const NavBar = (props) => {
     <div className="NavBar">
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="mr-auto">
-        <img className="dp-logo" src="/medias/dp-logo.png" alt="dp-logo" />
+          <img className="dp-logo" src="/medias/dp-logo.png" alt="dp-logo" />
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-          <Link
+              <Link
                 className="section-link"
                 activeClass="active"
                 to="about-section"
@@ -31,8 +31,8 @@ const NavBar = (props) => {
                 A propos
               </Link>
               <br />
-              </NavItem>
-              <NavItem>
+            </NavItem>
+            <NavItem>
               <Link
                 className="section-link"
                 activeClass="active"
@@ -44,8 +44,8 @@ const NavBar = (props) => {
               >
                 Compétences
               </Link>
-              </NavItem>
-              <NavItem>
+            </NavItem>
+            <NavItem>
               <Link
                 className="section-link"
                 activeClass="active"
@@ -57,8 +57,8 @@ const NavBar = (props) => {
               >
                 Portfolio
               </Link>
-              </NavItem>
-              <NavItem>
+            </NavItem>
+            <NavItem>
               <Link
                 className="section-link"
                 activeClass="active"
@@ -70,10 +70,10 @@ const NavBar = (props) => {
               >
                 Contact
               </Link>
-              </NavItem>
-              <NavItem>
-                <NavLink className="section-link" href="/cv">Mon CV</NavLink>
-              </NavItem>
+            </NavItem>
+            <NavItem>
+              <NavLink className="section-link" href="/cv">Mon CV</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
