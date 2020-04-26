@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.Imc {
+  min-height: 800px;
+  position: absolute;
+  padding-top: 70px;
+  width: 100%;
+  background: linear-gradient(to left, #c5d5cb, #e3e0cf);
+
+  h1 {
+    color: rgb(33, 62, 73);
+    font-family: 'Lato';
+    font-weight: bold;
+    padding-bottom: 100px;
+  }
+
+  .imc {
+    color: #D0FEFE;
+    background: #1F3B4D;
+    min-height: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px #0c181f,
+      -5px -5px 4px #325e7b;
+      margin-bottom: 60px;
+
+    svg.speedometer {
+      background: linear-gradient(145deg, #1c3545, #213f52);
+      box-shadow: 6px 6px 13px #19303f,
+        -6px -6px 13px #25465b;
+      border-radius: 100%;
+      margin: 60px 0px;
+    }
+
+    
+    .inputField {
+      
+      .field {
+        margin: auto;
+      }
+      
+      .MuiInputLabel-filled {
+        color: #D0FEFE;
+      }
+
+      .MuiFormLabel-root.Mui-focused {
+        color: #017374;
+      }
+
+      .MuiFilledInput-underline:after {
+        border-bottom: 2px solid #017374;
+      }
+
+      .MuiFilledInput-underline:before {
+        border-bottom: 1px solid #D0FEFE;
+      }
+
+      input {
+        color: gainsboro;
+        font-size: 20px;
+      }
+
+      .MuiInputBase-input {
+        background: linear-gradient(145deg, #1c3545, #213f52);
+        box-shadow: inset 6px 6px 13px #19303f,
+          inset -6px -6px 13px #25465b;
+      }
+    }
+
+
+    .calculateBtn {
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0px;
+
+      button.btn.btn-secondary {
+        width: 100px;
+        color: #D0FEFE;
+        border: none;
+        background: linear-gradient(145deg, #1c3545, #213f52);
+        box-shadow: 6px 6px 13px #19303f,
+          -6px -6px 13px #25465b;
+
+        &:hover {
+          background: linear-gradient(145deg, #1c3545, #213f52);
+          box-shadow: inset 6px 6px 13px #19303f,
+            inset -6px -6px 13px #25465b;
+        }
+      }
+
+    }
+  }
+}
