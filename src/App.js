@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import HomePage from './components/pages/HomePage';
-import CvPage from './components/pages/CvPage';
-import ToDoListPage from './components/pages/ToDoListPage';
-import GifPage from './components/pages/GifPage';
-import CalculatorPage from './components/pages/CalculatorPage';
-import TimerPage from './components/pages/TimerPage';
-import SnakePage from './components/pages/SnakePage';
-import TicTacToePage from './components/pages/TicTacToePage';
-import ChessPlayersPage from './components/pages/ChessPlayersPage';
-import DatePickerPage from './components/pages/DatePickerPage';
-import ImcPage from './components/pages/ImcPage';
+import HomePage from './pages/HomePage';
+import CvPage from './pages/CvPage';
+import ToDoListPage from './pages/ToDoListPage';
+import GifPage from './pages/GifPage';
+import CalculatorPage from './pages/CalculatorPage';
+import TimerPage from './pages/TimerPage';
+import SnakePage from './pages/SnakePage';
+import TicTacToePage from './pages/TicTacToePage';
+import ChessPlayersPage from './pages/ChessPlayersPage';
+import DatePickerPage from './pages/DatePickerPage';
+import ImcPage from './pages/ImcPage';
 
 import './App.scss';
 

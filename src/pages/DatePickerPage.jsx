@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Calendar from 'react-calendar';
-import NavApp from '../NavApp';
+import NavApp from '../components/NavApp';
 
 import './DatePickerPage.scss';
 

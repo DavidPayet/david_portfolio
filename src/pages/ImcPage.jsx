@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import NavApp from '../NavApp';
+import NavApp from '../components/NavApp';
 import TextField from '@material-ui/core/TextField';
 import ReactSpeedometer from "react-d3-speedometer";
 import './ImcPage.scss';
