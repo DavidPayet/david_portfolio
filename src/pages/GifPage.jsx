@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import gifs from '../../gif.js';
-import NavApp from '../NavApp';
+import gifs from '../gif.js';
+import NavApp from '../components/NavApp';
 
 import './GifPage.scss';
 

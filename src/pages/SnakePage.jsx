@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import Snake from '../Snake';
-import SnakeFood from '../SnakeFood';
-import NavApp from '../NavApp';
+import Snake from '../components/Snake';
+import SnakeFood from '../components/SnakeFood';
+import NavApp from '../components/NavApp';
 
 import './SnakePage.scss';
 

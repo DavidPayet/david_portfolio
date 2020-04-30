@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import NavApp from '../NavApp';
+import NavApp from '../components/NavApp';
 
-import Counter from '../Counter';
-import Chronometer from '../Chronometer';
-import PomodoroClock from '../PomodoroClock';
+import Counter from '../components/Counter';
+import Chronometer from '../components/Chronometer';
+import PomodoroClock from '../components/PomodoroClock';
 
 import './TimerPage.scss';
 
