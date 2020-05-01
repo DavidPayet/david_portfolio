@@ -2,7 +2,6 @@
 
 .ToDoListPage {
   min-height: 800px;
-  position: absolute;
   padding-top: 70px;
   width: 100%;
   background: linear-gradient(to left, #c5d5cb, #e3e0cf);
@@ -15,82 +14,69 @@
       padding-bottom: 100px;
     }
 
-    input {
-      color: rgb(33, 62, 73);
-      height: 50px;
-      width: 300px;
-      padding: 0px;
-      border-top: 0px;
-      border-left: 0px;
-      outline: none;
-    }
+    .form {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding-bottom: 50px;
 
-    .btn-add {
-      border: 0px;
-      height: 40px;
-      width: 100px;
-      font-family: 'Lato';
-      background-color: rgb(33, 62, 73);
-      color: rgb(241, 241, 243);
-      border: none;
-    }
-
-    .btn-add:hover {
-      background-color: rgb(66, 151, 207);
-      transition: .1s ease-out;
-    }
-
-    .btn-delete {
-      background-color: transparent;
-      font-size: 30px;
-      border: 0px;
-      margin-left: 20px;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      font-size: 20px;
-    }
-
-    .btn-delete:hover {
-      animation: shake 0.80s cubic-bezier(.36, .07, .19, .97) both;
-      transform: translate3d(0, 0, 0);
-    }
-
-    @keyframes shake {
-
-      10%,
-      90% {
-        transform: translate3d(-1px, 0, 0);
+      input {
+        font-size: 23px;
+        color: rgb(33, 62, 73);
+        max-width: 300px;
+        padding: 0px;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
       }
 
-      20%,
-      80% {
-        transform: translate3d(2px, 0, 0);
+      .addBtn {
+        height: 48.5px;
+        width: 52px;
+        background-color: rgb(33, 62, 73);
+        color: white;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        cursor: pointer;
       }
 
-      30%,
-      50%,
-      70% {
-        transform: translate3d(-4px, 0, 0);
+      .addBtn:hover {
+        background-color: rgb(66, 151, 207);
+        transition: .1s ease-out;
       }
-
-      40%,
-      60% {
-        transform: translate3d(4px, 0, 0);
-      }
-    }
-
-    .btn-delete:focus {
-      outline: none;
     }
 
     .list {
-      font-size: 30px;
       color: rgb(33, 62, 73);
-    }
 
-    .todo {
-      justify-content: center;
-      word-wrap: break-word;
+      .todo-text {
+        font-size: 23px;
+        text-align: left;
+        word-wrap: break-word;
+        align-items: baseline;
+      }
+
+      .checkCol {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        .check {
+          cursor: pointer;
+          margin: 0px;
+        }
+      }
+
+      .deleteBtn {
+        font-size: 30px;
+        border: 0px;
+        margin: none;
+        cursor: pointer;
+      }
+
+      .deleteBtn:hover {
+        color: red;
+        transition: .1s ease-out;
+      }
     }
   }
 }
