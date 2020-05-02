@@ -34,32 +34,16 @@ class GifPage extends Component {
       <div className="GifPage">
         <NavApp />
         <Container className='gifPage'>
+          <h1>Gifs Generator</h1>
+          <p>{this.state.phrase}</p>
           <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col xl="8" lg="8" md="8" sm="10" xs="10">
-              <h1>Gifs Generator</h1>
-            </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-          </Row>
-          <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col xl="8" lg="8" md="8" sm="10" xs="10">
-              <p>{this.state.phrase}</p>
-              <br />
-            </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-          </Row>
-          <Row>
-            <Col xl="2" lg="2" md="2"  />
+            <Col xl="2" lg="2" md="2" />
             <Col xl="8" lg="8" md="8" sm="12" xs="12">
               <img className="gifMedias" src={this.state.gif} alt="gif" />
               <br />
-              <br />
               <Button className="btn-next" onClick={e => this.generateGif(e)}>Suivant</Button>
-              <br />
-              <br />
             </Col>
-            <Col xl="2" lg="2" md="2"  />
+            <Col xl="2" lg="2" md="2" />
           </Row>
         </Container>
       </div>

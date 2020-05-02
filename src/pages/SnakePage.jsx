@@ -66,7 +66,7 @@ class SnakePage extends Component {
       case 39:
         this.setState({ direction: 'RIGHT' });
         break;
-        default:
+      default:
     }
   }
 
@@ -87,7 +87,7 @@ class SnakePage extends Component {
       case 'UP':
         head = [head[0], head[1] - 2];
         break;
-        default:
+      default:
     }
     dots.push(head);
     dots.shift();
@@ -152,23 +152,15 @@ class SnakePage extends Component {
       <div className="SnakePage">
         <NavApp />
         <Container className="snakePage">
-          <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col xl="8" lg="8" md="8" sm="10" xs="10">
-              <h1>Snake</h1>
-            </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-          </Row>
-
+          <h1>Snake</h1>
           <Row>
             <Col xl="3" lg="3" md="3" sm="1" xs="1" />
             <Col className="game-area" lg="6" md="6" sm="10" xs="10">
-                <Snake className="snake-dot" snakeDots={this.state.snakeDots} />
-                <SnakeFood className="snake-food" dot={this.state.food} />
+              <Snake className="snake-dot" snakeDots={this.state.snakeDots} />
+              <SnakeFood className="snake-food" dot={this.state.food} />
             </Col>
             <Col xl="3" lg="3" md="3" sm="1" xs="1" />
           </Row>
-
         </Container>
       </div>
     );

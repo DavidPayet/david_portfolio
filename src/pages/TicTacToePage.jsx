@@ -62,51 +62,28 @@ export default class TicTacToePage extends Component {
     } else {
       status = 'Le tour est à : ' + (this.state.xIsNext ? 'X' : 'O');
     }
-      return (
-        <div className="TicTacToePage">
-          <NavApp />
-          <Container className="ticTacToePage">
-            <Row>
-              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-              <Col xl="8" lg="8" md="8" sm="10" xs="10">
-                <h1>Tic Tac Toe</h1>
-              </Col>
-              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            </Row>
-
-            <Row>
-              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-              <Col xl="8" lg="8" md="8" sm="10" xs="10">
-                <h3>{status}</h3>
-              </Col>
-              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            </Row>
-
-            <Row>
-              <Col xl="2" lg="2" md="2" sm="1" xs="1"/>
-              <Col className="game" xl="8" lg="8" md="8" sm="10" xs="10">
-                <TicTacToeBoard
-                  onClick={(i) => this.handleClick(i)}
-                  squares={current.squares}
-                />
-              </Col>
-              <Col xl="2" lg="2" md="2" sm="1" xs="1"/>
-            </Row>
-
-            <Row>
-              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-              <Col className="game-info" lg="8" md="8" sm="10" xs="10">
-                
-                <ul>{moves}</ul>
-              </Col>
-              <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            </Row>
-
-          </Container>
-        </div>
-      );
-    }
+    return (
+      <div className="TicTacToePage">
+        <NavApp />
+        <Container className="ticTacToePage">
+          <h1>Tic Tac Toe</h1>
+          <h3>{status}</h3>
+          <Row>
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col className="game" xl="8" lg="8" md="8" sm="10" xs="10">
+              <TicTacToeBoard
+                onClick={(i) => this.handleClick(i)}
+                squares={current.squares}
+              />
+            </Col>
+            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+          </Row>
+          <ul>{moves}</ul>
+        </Container>
+      </div>
+    );
   }
+}
 
 function calculateWinner(squares) {
   const lines = [

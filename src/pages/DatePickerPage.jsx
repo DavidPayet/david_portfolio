@@ -38,17 +38,17 @@ class DatePickerPage extends Component {
       <div className="DatePickerPage">
         <NavApp />
         <Container className='datePickerPage'>
+          <h1>Date Picker</h1>
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col xl="8" lg="8" md="8" sm="10" xs="10">
-              <h1>Date Picker</h1>
               <div onClick={this.reset} >
-              <Calendar
-                className="calendar"
-                onChange={this.handleChange}
-                selectRange={true}
-                value={this.state.date}
-              />
+                <Calendar
+                  className="calendar"
+                  onChange={this.handleChange}
+                  selectRange={true}
+                  value={this.state.date}
+                />
               </div>
               <br />
               {this.state.showDate ? (

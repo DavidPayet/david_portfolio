@@ -39,14 +39,7 @@ class CalculatorPage extends Component {
       <div className="CalculatorPage">
         <NavApp />
         <Container className="calculatorPage">
-          <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col xl="8" lg="8" md="8" sm="10" xs="10">
-              <h1>Calculator</h1>
-            </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-          </Row>
-
+          <h1>Calculator</h1>
           <Row className="resultat">
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col className="result" xl="8" lg="8" md="8" sm="10" xs="10">
@@ -60,7 +53,6 @@ class CalculatorPage extends Component {
             </Col>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
-
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col className="rowButtons" xl="8" lg="8" md="8" sm="10" xs="10">
@@ -71,7 +63,6 @@ class CalculatorPage extends Component {
             </Col>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
-
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col className="rowButtons" xl="8" lg="8" md="8" sm="10" xs="10">
@@ -82,7 +73,6 @@ class CalculatorPage extends Component {
             </Col>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
-
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col className="rowButtons" xl="8" lg="8" md="8" sm="10" xs="10">
@@ -93,7 +83,6 @@ class CalculatorPage extends Component {
             </Col>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
-
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col className="rowButtons" xl="8" lg="8" md="8" sm="10" xs="10">

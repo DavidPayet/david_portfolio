@@ -17,12 +17,10 @@
   .imc {
     color: #D0FEFE;
     background: #1F3B4D;
-    min-height: 600px;
     border-radius: 20px;
     box-shadow: 5px 5px 4px #0c181f,
       -5px -5px 4px #325e7b;
-      margin-bottom: 60px;
-
+    
     svg.speedometer {
       background: linear-gradient(145deg, #1c3545, #213f52);
       box-shadow: 6px 6px 13px #19303f,
@@ -31,13 +29,13 @@
       margin: 60px 0px;
     }
 
-    
+
     .inputField {
-      
+
       .field {
         margin: auto;
       }
-      
+
       .MuiInputLabel-filled {
         color: #D0FEFE;
       }

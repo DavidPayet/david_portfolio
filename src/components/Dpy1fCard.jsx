@@ -21,7 +21,6 @@ const Dpy1fCard = () => {
             <CardImg top width="100%" src="/medias/dpy1f2.png" alt="2py1f-img" />
             <CardBody>
               <CardTitle className="title" >2PY1F</CardTitle>
-
             </CardBody>
           </Card>
         </NavLink>
