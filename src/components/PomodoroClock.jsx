@@ -112,12 +112,9 @@ class PomodoroClock extends Component {
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <h2>Pomodoro Clock</h2>
-              <br />
-              <br />
             </Col>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
-
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col xl="8" lg="8" md="8" sm="10" xs="10">
@@ -129,8 +126,6 @@ class PomodoroClock extends Component {
             </Col>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           </Row>
-          <br />
-          <br />
           <Row>
             <Col xl="4" lg="4" md="4" sm="2" xs="2" />
             <Col xl="2" lg="2" md="2" sm="4" xs="4">

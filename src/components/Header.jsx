@@ -15,27 +15,26 @@ function Header() {
               <div className="titre">
                 <h1 className="lightSpeedIn">
                   David Payet
-              </h1>
+                </h1>
                 <br />
                 <h2 className="zoomInUp">
                   Web Developer
-              </h2>
+                </h2>
               </div>
-
             </div>
             <Row className="bottom-arrow">
-            <Col xl="12" lg="12" md="12" sm="12" xs="12">
-              <Link
-                className="arrow"
-                activeClass="active"
-                to="about-section"
-                spy={true}
-                smooth={true}
-                offset={70}
-                duration={500}
-              >
-                <span >&#x2303;</span>
-              </Link>
+              <Col xl="12" lg="12" md="12" sm="12" xs="12">
+                <Link
+                  className="arrow"
+                  activeClass="active"
+                  to="about-section"
+                  spy={true}
+                  smooth={true}
+                  offset={70}
+                  duration={500}
+                >
+                  <span >&#x2303;</span>
+                </Link>
               </Col>
             </Row>
           </Col>

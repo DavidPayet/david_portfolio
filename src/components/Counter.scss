@@ -13,29 +13,34 @@
     h2 {
       font-family: 'Turret Road', cursive;
       color: rgb(177, 194, 38);
+      padding-bottom: 40px;
     }
 
-    span {
+    .result {
       font-family: 'Turret Road', cursive;
       font-size: 60px;
       color: rgb(177, 194, 38);
       text-shadow: 0 0 5px rgba(241, 241, 243, 0.178);
     }
 
-    button {
-      height: 50px;
-      width: 80px;
-      border-radius: 2px;
-      background-color: rgb(83, 180, 244);
-      border: none;
-      margin: 4px;
-      font-size: 30px;
-      box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.507);
-    }
+    .row {
+      padding-top: 40px;
 
-    button:hover {
-      background-color: rgb(66, 151, 207);
-      transition: .1s ease-out;
+      button {
+        height: 50px;
+        width: 80px;
+        border-radius: 2px;
+        background-color: rgb(83, 180, 244);
+        border: none;
+        margin: 4px;
+        font-size: 30px;
+        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.507);
+      }
+
+      button:hover {
+        background-color: rgb(66, 151, 207);
+        transition: .1s ease-out;
+      }
     }
   }
 }

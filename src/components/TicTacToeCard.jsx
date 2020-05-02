@@ -17,7 +17,6 @@ const TicTacToeCard = () => {
           <CardImg top width="100%" src="/medias/tictactoe-img.jpg" alt="ticTacToe-img" />
           <CardBody>
             <CardTitle className="title" >Tic Tac Toe</CardTitle>
-
           </CardBody>
         </Card>
       </NavLink>

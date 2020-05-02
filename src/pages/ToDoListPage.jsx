@@ -77,15 +77,8 @@ const ToDoListPage = () => {
     <div className="ToDoListPage">
       <NavApp />
       <Container className='toDoListPage'>
-        <Row>
-          <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-          <Col xl="8" lg="8" md="8" sm="10" xs="10">
-            <h1>To Do List</h1>
-            <TodoForm addTodo={addTodo} />
-          </Col>
-          <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-        </Row>
-        <br />
+        <h1>To Do List</h1>
+        <TodoForm addTodo={addTodo} />
         <Row>
           <Col xl="2" lg="2" md="2" sm="1" xs="1" />
           <Col xl="8" lg="8" md="8" sm="10" xs="10">

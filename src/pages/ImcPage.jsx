@@ -38,19 +38,11 @@ const ImcPage = () => {
   return (
     <div className="Imc">
       <NavApp />
-      <Container>
-      <Row>
-          <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-          <Col xl="8" lg="8" md="8" sm="10" xs="10">
-            <h1>IMC App</h1>
-          </Col>
-          <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-        </Row>
-        </Container>
+      <h1>IMC App</h1>
       <Container className="imc">
         <Row>
-          <Col xl="1" lg="1" md="1" sm="1" xs="1" />
-          <Col className="speedometer" xl="10" lg="10" md="10" sm="10" xs="10">
+          <Col xl="3" lg="3" md="3" sm="1" xs="1" />
+          <Col className="speedometer" xl="6" lg="6" md="6" sm="6" xs="6">
             <ReactSpeedometer
               needleHeightRatio={0.6}
               maxSegmentLabels={0}
@@ -68,7 +60,7 @@ const ImcPage = () => {
               needleColor={"#017374"}
             />
           </Col>
-          <Col xl="1" lg="1" md="1" sm="1" xs="1" />
+          <Col xl="3" lg="3" md="3" sm="1" xs="1" />
         </Row>
         <Row>
           <Col xl="3" lg="3" md="3" sm="1" xs="1" />
