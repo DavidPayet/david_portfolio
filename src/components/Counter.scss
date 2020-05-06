@@ -26,18 +26,19 @@
     .row {
       padding-top: 40px;
 
-      button {
+      .btn {
         height: 50px;
         width: 80px;
         border-radius: 2px;
         background-color: rgb(83, 180, 244);
+        color: rgb(241, 241, 243);
         border: none;
         margin: 4px;
         font-size: 30px;
         box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.507);
       }
 
-      button:hover {
+      .btn:hover {
         background-color: rgb(66, 151, 207);
         transition: .1s ease-out;
       }
