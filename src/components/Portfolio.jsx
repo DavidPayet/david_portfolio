@@ -1,19 +1,21 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import ToDoListCard from './ToDoListCard';
-import GifCard from './GifCard';
+import { Container } from 'reactstrap';
+
 import CalculatorCard from './CalculatorCard';
-import TimerCard from './TimerCard';
-import SnakeCard from './SnakeCard';
-import TicTacToeCard from './TicTacToeCard';
 import ChessPlayersCard from './ChessPlayersCard';
+import CvdCard from './CvdCard';
 import DatePickerCard from './DatePickerCard';
 import Dpy1fCard from './Dpy1fCard';
+import GifCard from './GifCard';
 import ImcCard from './ImcCard';
+import SnakeCard from './SnakeCard';
+import TicTacToeCard from './TicTacToeCard';
+import TimerCard from './TimerCard';
+import ToDoListCard from './ToDoListCard';
 
 import './Portfolio.scss';
+import 'react-multi-carousel/lib/styles.css';
 
 
 const responsive = {
@@ -47,14 +49,15 @@ const Portfolio = () => {
           className="carousel"
         >
           <Dpy1fCard />
+          <CvdCard />
           <ImcCard />
+          <ChessPlayersCard />
           <ToDoListCard />
           <TicTacToeCard />
           <CalculatorCard />
           <TimerCard />
           <SnakeCard />
           <GifCard />
-          <ChessPlayersCard />
           <DatePickerCard />
         </Carousel>
       </Container>

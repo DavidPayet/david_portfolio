@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import CvPage from './pages/CvPage';
 import ToDoListPage from './pages/ToDoListPage';
+import Footer from './components/Footer';
 import GifPage from './pages/GifPage';
 import CalculatorPage from './pages/CalculatorPage';
 import TimerPage from './pages/TimerPage';
@@ -31,6 +32,7 @@ class App extends Component {
           <Route onUpdate={window.scrollTo(0, 0)} exact path="/datepicker" component={DatePickerPage} />
           <Route onUpdate={window.scrollTo(0, 0)} exact path="/imc" component={ImcPage} />
         </Switch>
+        <Footer />
       </div>
     );
   }
