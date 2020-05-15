@@ -16,7 +16,11 @@ const Dpy1fCard = () => {
   return (
     <div className="Card">
       <Tooltip arrow title={longText} TransitionProps={{ timeout: 600 }}>
-        <NavLink href="https://cvd-live-stats.netlify.app">
+        <NavLink
+          href="https://cvd-live-stats.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card className="card">
             <CardImg top width="100%" src="/medias/cvd.png" alt="Cvd-img" />
             <CardBody>

@@ -16,7 +16,11 @@ const Dpy1fCard = () => {
   return (
     <div className="Card">
       <Tooltip arrow title={longText} TransitionProps={{ timeout: 600 }}>
-        <NavLink href="https://2py1f.netlify.com">
+        <NavLink
+          href="https://2py1f.netlify.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card className="card">
             <CardImg top width="100%" src="/medias/dpy1f2.png" alt="2py1f-img" />
             <CardBody>
