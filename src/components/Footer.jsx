@@ -14,7 +14,7 @@ const Footer = () => {
               <FaGithub className="iconsLinks" />
             </a>
             <a href="https://www.linkedin.com/in/david-payet/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="iconsLinks" href="https://www.linkedin.com/in/david-payet/" target="_blank" rel="noopener noreferrer" />
+              <FaLinkedin className="iconsLinks" />
             </a>
           </Col>
         </Row>
