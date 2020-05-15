@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import './Footer.scss';
 
@@ -10,10 +11,10 @@ const Footer = () => {
         <Row>
           <Col xl="12" lg="12" md="12" sm="12" xs="12">
             <a href="https://github.com/DavidPayet" target="_blank" rel="noopener noreferrer">
-              <img src="/medias/github-icon.png" className="github-icon" alt="Github icon" />
+              <FaGithub className="iconsLinks" />
             </a>
             <a href="https://www.linkedin.com/in/david-payet/" target="_blank" rel="noopener noreferrer">
-              <img src="/medias/linkedin-icon.png" className="linkedin-icon" alt="Linkein icon" />
+              <FaLinkedin className="iconsLinks" href="https://www.linkedin.com/in/david-payet/" target="_blank" rel="noopener noreferrer" />
             </a>
           </Col>
         </Row>
