@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from "react-scroll";
+import { IoIosArrowDropup } from "react-icons/io";
 
 import './BackToTopButton.scss';
 
 const BackToTopButton = () => (
-  <button type="button" title="Haut de Page" className="BackToTopButton hidden">
+  <button type="button" title="Up Page" className="BackToTopButton">
     <Link
       activeClass="active"
       to="up-page"
@@ -12,9 +13,8 @@ const BackToTopButton = () => (
       smooth={true}
       duration={500}
     >
-      <img alt="Back to top" src="/medias/topArrow.png" />
+      <IoIosArrowDropup className="rubberBand" />
     </Link>
-
   </button>
 );
 
