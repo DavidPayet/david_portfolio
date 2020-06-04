@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { Link } from "react-scroll";
 
-import './NavBar.scss';
+import '../styles/NavBar.scss';
 
 const NavBar = (props) => {
   const [collapsed, setCollapsed] = useState(true);

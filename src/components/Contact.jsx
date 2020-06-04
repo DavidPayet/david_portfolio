@@ -6,7 +6,7 @@ import {
 } from 'reactstrap';
 
 
-import './Contact.scss';
+import '../styles/Contact.scss';
 
 export default class Contact extends React.Component {
   constructor(props) {

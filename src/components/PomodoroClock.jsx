@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import moment from 'moment';
 
-import './PomodoroClock.scss';
+import '../styles/PomodoroClock.scss';
 
 const SetTimer = ({ type, label, value, handleClick }) => (
   <div>

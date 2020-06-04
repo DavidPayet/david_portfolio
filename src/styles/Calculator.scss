@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.Calculator {
+  padding: 70px 0 70px 0;
+  width: 100%;
+  background: linear-gradient(to left, #c5d5cb, #e3e0cf);
+
+  .calculator {
+    .result {
+      background: rgb(33, 62, 73);
+      color: rgb(83, 180, 244);
+      text-shadow: 0 0 5px rgba(89, 195, 195, 0.5);
+      height: 50px;
+      overflow: hidden;
+      font-size: 34px;
+      font-family: 'Lato';
+      max-width: 280px;
+      margin: auto;
+
+      span {
+        float: right;
+      }
+    }
+
+    .clear-btn {
+      padding: 0px;
+
+      .clearBtn {
+        width: 280px;
+        margin: auto;
+      }
+    }
+
+
+    button {
+      height: 50px;
+      width: 70px;
+      background-color: rgb(241, 241, 243);
+      color: rgb(33, 62, 73);
+      font-family: 'Lato';
+      font-size: 20px;
+      border: 1px solid rgb(33, 62, 73);
+    }
+
+    button:hover {
+      background: #d7ddd3;
+      cursor: pointer;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .rowButtons {
+      padding: 0;
+    }
+  }
+}

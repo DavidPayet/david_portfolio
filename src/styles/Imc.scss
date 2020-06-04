@@ -1,18 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 .Imc {
-  min-height: 800px;
   padding-top: 70px;
-  width: 100%;
   background: linear-gradient(to left, #c5d5cb, #e3e0cf);
-  padding-bottom: 130px;
-
-  h1 {
-    color: rgb(33, 62, 73);
-    font-family: 'Lato';
-    font-weight: bold;
-    padding-bottom: 100px;
-  }
+  padding-bottom: 70px;
 
   .imc {
     color: #D0FEFE;
@@ -20,7 +11,8 @@
     border-radius: 20px;
     box-shadow: 5px 5px 4px #0c181f,
       -5px -5px 4px #325e7b;
-    
+    width: 70%;
+
     svg.speedometer {
       background: linear-gradient(145deg, #1c3545, #213f52);
       box-shadow: 6px 6px 13px #19303f,

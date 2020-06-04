@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import NavApp from '../components/NavApp';
 import TextField from '@material-ui/core/TextField';
 import ReactSpeedometer from "react-d3-speedometer";
-import './ImcPage.scss';
+import '../styles/Imc.scss';
 
-const ImcPage = () => {
+const Imc = () => {
   const [cm, setCm] = useState('');
   const [kg, setKg] = useState('');
   const [result, setResult] = useState('');
@@ -37,13 +36,12 @@ const ImcPage = () => {
 
   return (
     <div className="Imc">
-      <NavApp />
-      <h1>IMC App</h1>
       <Container className="imc">
         <Row>
-          <Col xl="3" lg="3" md="3" sm="1" xs="1" />
-          <Col className="speedometer" xl="6" lg="6" md="6" sm="6" xs="6">
+          <Col xl="3" lg="3" md="3" sm="1" xs="1" style={{ padding: "0px" }} />
+          <Col className="speedometer" xl="6" lg="6" md="6" sm="10" xs="10">
             <ReactSpeedometer
+              className="compter"
               needleHeightRatio={0.6}
               maxSegmentLabels={0}
               minValue={0}
@@ -53,8 +51,8 @@ const ImcPage = () => {
               textColor={"#D0FEFE"}
               startColor={"#D0FEFE"}
               endColor={"#017374"}
-              width={200}
-              height={200}
+              width={150}
+              height={150}
               thickness={4}
               ringWidth={20}
               needleColor={"#017374"}
@@ -63,7 +61,7 @@ const ImcPage = () => {
           <Col xl="3" lg="3" md="3" sm="1" xs="1" />
         </Row>
         <Row>
-          <Col xl="3" lg="3" md="3" sm="1" xs="1" />
+          <Col xl="3" lg="3" md="3" sm="1" xs="1" style={{ padding: "0px" }} />
           <Col className="inputField" xl="6" lg="6" md="6" sm="10" xs="10">
             <Row>
               <Col className="field" xl="6" lg="6" md="6" sm="10" xs="10">
@@ -118,4 +116,4 @@ const ImcPage = () => {
   );
 };
 
-export default ImcPage;
+export default Imc;

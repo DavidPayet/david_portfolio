@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import './About.scss';
+import '../styles/About.scss';
 
 const About = () => {
   return (
@@ -13,11 +13,11 @@ const About = () => {
             <img className="photo" src="/medias/photo.png" alt="myphoto" />
           </Col>
           <Col xl="8" lg="8" md="8" sm="12" xs="12">
-            <p>Curieux de nature, le métier de développeur web s'est présenté à moi comme une évidence. <em>Ou je me suis présenté à lui, cela fonctionne aussi.</em></p>
-            <p>Ayant le goût du challenge, j'aime relever des défis et trouver des solutions aux problèmes.</p>
-            <p>Pour ce faire, j’utilise différents outils illustrés plus bas afin de mettre en &#x153;uvre un site web de A à Z.</p>
-            <p>Stimulant créatif, ce domaine m'offre l'opportunité d'en apprendre tout les jours en prenant du plaisir.</p>
-            <p>Progressant actuellement en totale autonomie, je souhaiterai mettre à profit mes qualités et compétences au sein d'une équipe et ainsi booster mon évolution dans le web.</p>
+            <p>De nature curieuse, je me suis intéressé au métier de développeur web.</p>
+            <p>Le challenge et les défis de ce domaine font désormais partis de mon quotidien et chaque obstacle franchis m'apporte satisfaction <em>(Très courte certes, mais ça vaut le coup :)</em>.</p>
+            <p>J’utilise différents outils illustrés plus bas afin de mettre en &#x153;uvre un site web de A à Z.</p>
+            <p>Stimulant créatif, ce domaine m'offre l'opportunité d'en apprendre tout les jours tout en prenant du plaisir.</p>
+            <p>Progressant actuellement de manière autonome, je souhaiterai partager mes qualités et compétences au sein d'une équipe pour un travail collaboratif, être confronter aux enjeux des entreprises et faire de ma nouvelle passion mon métier.</p>
           </Col>
         </Row>
       </Container>

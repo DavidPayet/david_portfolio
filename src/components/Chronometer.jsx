@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import ChronometerElapsedTime from './ChronometerElapsedTime';
 import ChronometerButton from './ChronometerButton';
 
-import './Chronometer.scss';
+import '../styles/Chronometer.scss';
 
 class Chronometer extends Component {
   constructor(props) {

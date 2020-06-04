@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.SnakeGame {
+  padding-bottom: 120px;
+  padding-top: 70px;
+  width: 100%;
+  background: linear-gradient(to left, #c5d5cb, #e3e0cf);
+
+  .snakeGame {
+    .game-area {
+      background-color: rgb(33, 62, 73);
+      position: relative;
+      width: 300px;
+      height: 300px;
+
+
+      .snake-dot {
+        position: absolute;
+        width: 2%;
+        height: 2%;
+        background-color: rgb(83, 180, 244);
+        z-index: 2;
+        border-radius: 2px;
+      }
+
+      .snake-food {
+        position: absolute;
+        width: 2%;
+        height: 2%;
+        background-color: rgb(177, 194, 38);
+        z-index: 1;
+        border-radius: 2px;
+      }
+    }
+  }
+}

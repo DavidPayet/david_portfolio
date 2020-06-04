@@ -1,6 +1,6 @@
 import React from 'react';
 import formatDuration from 'format-duration';
-import './Chronometer.scss'
+import '../styles/Chronometer.scss'
 
 function elapsedTime(e) {
   let elapsed = 0;

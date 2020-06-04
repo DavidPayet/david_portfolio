@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import NavApp from '../components/NavApp';
 
-import './ChessPlayersPage.scss';
+import '../styles/ChessPlayersPage.scss';
 
 const ChessPlayersPage = () => {
   return (

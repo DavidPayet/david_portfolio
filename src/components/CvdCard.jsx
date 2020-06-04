@@ -8,7 +8,7 @@ import {
 } from 'reactstrap';
 import Tooltip from '@material-ui/core/Tooltip';
 
-import './Card.scss';
+import '../styles/Card.scss';
 
 const longText = `CVD Live Stats vous permet dans un premier temps d'avoir une vue globale sur l'épidémie CVD-19 grâce à un donut (chart.js) et de faire une recherche  par pays pour en connaître ses statistiques. Ensuite, vous avez la possibilité de consulter ces données sur une carte réalisée avec Mapbox Gl.`;
 

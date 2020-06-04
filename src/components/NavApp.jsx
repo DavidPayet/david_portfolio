@@ -9,7 +9,7 @@ import {
   NavLink
 } from 'reactstrap';
 
-import './NavBar.scss';
+import '../styles/NavBar.scss';
 
 const NavApp = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -26,6 +26,9 @@ const NavApp = (props) => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
+              <NavLink className="section-link" href="/" >Home</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink
                 className="section-link"
                 href="https://2py1f.netlify.app"
@@ -34,9 +37,6 @@ const NavApp = (props) => {
               >
                 2PY1F
               </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="section-link" href="/calculator" >Calculator</NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="section-link" href="/chessplayers">Chess Players</NavLink>
@@ -50,27 +50,6 @@ const NavApp = (props) => {
               >
                 CVD Live Stats
               </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="section-link" href="/datepicker">Date Picker</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="section-link" href="/gif-generator">Gif Generator</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="section-link" href="/imc">IMC App</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="section-link" href="/snake">Snake</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="section-link" href="/tictactoe">Tic Tac Toe</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="section-link" href="/timers">Timers</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="section-link" href="/todolist">To Do List</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

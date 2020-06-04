@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import NavApp from '../components/NavApp';
 
-import './CalculatorPage.scss';
+import '../styles/Calculator.scss';
 
-class CalculatorPage extends Component {
+class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,62 +35,65 @@ class CalculatorPage extends Component {
   }
   render() {
     return (
-      <div className="CalculatorPage">
-        <NavApp />
-        <Container className="calculatorPage">
-          <h1>Calculator</h1>
-          <Row className="resultat">
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col className="result" xl="8" lg="8" md="8" sm="10" xs="10">
+      <div className="Calculator">
+        <Container className="calculator">
+          <Row>
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" style={{ marginRight: "-1px" }} />
+            <Col className="result" xl="8" lg="8" md="8" sm="12" xs="12">
               <span>{this.state.operation}</span>
-              <button className="clear-btn"
-                value="clear"
-                contenu="clear"
-                onClick={this.handleClickClear}>
-                A/C
-              </button>
             </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
           </Row>
           <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col className="rowButtons" xl="8" lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
+            <Col className="clear-btn" xl="8" lg="8" md="8" sm="12" xs="12">
+              <button
+                className="clearBtn"
+                value="clear"
+                contenu="clear"
+                onClick={this.handleClickClear}>Clear</button>
+            </Col>
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
+          </Row>
+          <Row>
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
+            <Col className="rowButtons" xl="8" lg="8" md="8" sm="12" xs="12">
               <button value="7" contenu="7" onClick={this.handleClick}>7</button>
               <button value="8" contenu="8" onClick={this.handleClick}>8</button>
               <button value="9" contenu="9" onClick={this.handleClick}>9</button>
               <button value="/" contenu="/" onClick={this.handleClick}>/</button>
             </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
           </Row>
           <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col className="rowButtons" xl="8" lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
+            <Col className="rowButtons" xl="8" lg="8" md="8" sm="12" xs="12">
               <button value="4" contenu="4" onClick={this.handleClick}>4</button>
               <button value="5" contenu="5" onClick={this.handleClick}>5</button>
               <button value="6" contenu="6" onClick={this.handleClick}>6</button>
               <button value="*" contenu="X" onClick={this.handleClick}>X</button>
             </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
           </Row>
           <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col className="rowButtons" xl="8" lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
+            <Col className="rowButtons" xl="8" lg="8" md="8" sm="12" xs="12">
               <button value="1" contenu="1" onClick={this.handleClick}>1</button>
               <button value="2" contenu="2" onClick={this.handleClick}>2</button>
               <button value="3" contenu="3" onClick={this.handleClick}>3</button>
               <button value="-" contenu="-" onClick={this.handleClick}>-</button>
             </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
           </Row>
           <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col className="rowButtons" xl="8" lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
+            <Col className="rowButtons" xl="8" lg="8" md="8" sm="12" xs="12">
               <button value="0" contenu="0" onClick={this.handleClick}>0</button>
               <button value="." contenu="." onClick={this.handleClick}>.</button>
               <button value="=" contenu="=" onClick={this.handleClickEqual}>=</button>
               <button value="+" contenu="+" onClick={this.handleClick}>+</button>
             </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
+            <Col xl="2" lg="2" md="2" sm="0" xs="0" />
           </Row>
         </Container>
       </div>
@@ -99,4 +101,4 @@ class CalculatorPage extends Component {
   }
 }
 
-export default CalculatorPage;
+export default Calculator;

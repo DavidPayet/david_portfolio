@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 
-import './Counter.scss';
+import '../styles/Counter.scss';
 
 const Counter = () => {
   const [count, setCount] = useState(0)
@@ -18,7 +18,6 @@ const Counter = () => {
   return (
     <div className="Counter">
       <Container className="counter">
-        <h2>Counter</h2>
         <span className="result">{count}</span>
         <Row className="row">
           <Col xl="4" lg="4" md="4" sm="2" xs="2" />

@@ -8,19 +8,19 @@ import {
 } from 'reactstrap';
 import Tooltip from '@material-ui/core/Tooltip';
 
-import './Card.scss';
+import '../styles/Card.scss';
 
-const longText = `Timers regroupe 1 compteur, 1 chronomètre et 1 pomodoro.`;
+const longText = `Regroupement des mes premières applications en ReactJS`;
 
-const TimerCard = () => {
+const MiniAppsCard = () => {
   return (
     <div className="Card">
       <Tooltip arrow title={longText} TransitionProps={{ timeout: 600 }}>
-        <NavLink href="/timers" >
+        <NavLink href="/miniapps">
           <Card className="card">
-            <CardImg top width="100%" src="/medias/timer.jpg" alt="timer-img" />
+            <CardImg top width="100%" src="/medias/miniapps.jpeg" alt="miniapps-img" />
             <CardBody>
-              <CardTitle className="title" >Timers</CardTitle>
+              <CardTitle className="title" >First Apps</CardTitle>
             </CardBody>
           </Card>
         </NavLink>
@@ -29,4 +29,4 @@ const TimerCard = () => {
   );
 };
 
-export default TimerCard;
+export default MiniAppsCard;

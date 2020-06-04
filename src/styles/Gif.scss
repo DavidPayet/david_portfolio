@@ -1,35 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-.GifPage {
+.Gif {
   min-height: 800px;
   padding-top: 70px;
   width: 100%;
   background: linear-gradient(to left, #c5d5cb, #e3e0cf);
 
-  .gifPage {
-    .home {
-      .dp-logo {
-        height: 80px;
-      }
-    }
-
-    h1 {
-      color: rgb(33, 62, 73);
-      font-family: 'Lato';
-      font-weight: bold;
-      padding-bottom: 100px;
-    }
-
+  .gif {
     p {
       color: rgb(33, 62, 73);
       font-family: 'Lato';
       font-size: 20px;
-      height: 50px;
+      padding-bottom: 60px;
     }
 
     .gifMedias {
-      max-width: 320px;
-      height: 320px;
+      width: 80%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      padding-bottom: 60px;
     }
 
     .btn-next {
@@ -40,7 +32,6 @@
       background-color: rgb(33, 62, 73);
       color: rgb(241, 241, 243);
       border: none;
-      margin-top: 35px;
     }
 
     .btn-next:hover {
