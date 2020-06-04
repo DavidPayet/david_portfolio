@@ -8,7 +8,7 @@ import {
 } from 'reactstrap';
 import Tooltip from '@material-ui/core/Tooltip';
 
-import './Card.scss';
+import '../styles/Card.scss';
 
 const longText = `Voici un poste de télécommunication révolutionnaire nommé 2PY1F ! Connectez vous et Essayez le en y laissant un message ! Vous avez aussi la possibilité de suppimer votre message ainsi que d'aimer un message existant. Cette aplication codée en react utilise firebase pour l'authentification et la base de données.`;
 

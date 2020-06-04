@@ -8,7 +8,7 @@ import {
 } from 'reactstrap';
 import Tooltip from '@material-ui/core/Tooltip';
 
-import './Card.scss';
+import '../styles/Card.scss';
 
 const longText = `Voici une vidéo de démonstration de Chess Player Data. Cette application recupère des données sur des joueurs d'échecs avec la possibilité d'aujout et de suppression grâce à des requêtes SQL. Utilisation de NodeJS pour le backend.`;
 

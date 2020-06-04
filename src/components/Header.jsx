@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from "react-scroll";
 
-import './Header.scss';
+import '../styles/Header.scss';
 
 function Header() {
   return (

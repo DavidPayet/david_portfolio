@@ -1,25 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-.DatePickerPage {
-  min-height: 800px;
-  padding-top: 70px;
+.DatePicker {
+  padding: 70px 0 70px 0;
   width: 100%;
   background: linear-gradient(to left, #c5d5cb, #e3e0cf);
 
-  .datePickerPage {
-    .home {
-      .dp-logo {
-        height: 80px;
-      }
-    }
-
-    h1 {
-      color: rgb(33, 62, 73);
-      font-family: 'Lato';
-      font-weight: bold;
-      padding-bottom: 100px;
-    }
-
+  .datePicker {
     .calendar {
       max-width: 100%;
       padding-top: 50px;

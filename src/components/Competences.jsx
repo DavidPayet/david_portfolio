@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import './Competences.scss';
+import '../styles/Competences.scss';
 
 const Competences = () => {
   return (

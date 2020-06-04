@@ -2,19 +2,12 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import { Container } from 'reactstrap';
 
-import CalculatorCard from './CalculatorCard';
 import ChessPlayersCard from './ChessPlayersCard';
 import CvdCard from './CvdCard';
-import DatePickerCard from './DatePickerCard';
 import Dpy1fCard from './Dpy1fCard';
-import GifCard from './GifCard';
-import ImcCard from './ImcCard';
-import SnakeCard from './SnakeCard';
-import TicTacToeCard from './TicTacToeCard';
-import TimerCard from './TimerCard';
-import ToDoListCard from './ToDoListCard';
+import MiniAppsCard from './MiniAppsCard'
 
-import './Portfolio.scss';
+import '../styles/Portfolio.scss';
 import 'react-multi-carousel/lib/styles.css';
 
 
@@ -48,17 +41,10 @@ const Portfolio = () => {
           showDots={true}
           className="carousel"
         >
+          <MiniAppsCard />
           <Dpy1fCard />
           <CvdCard />
-          <ImcCard />
           <ChessPlayersCard />
-          <ToDoListCard />
-          <TicTacToeCard />
-          <CalculatorCard />
-          <TimerCard />
-          <SnakeCard />
-          <GifCard />
-          <DatePickerCard />
         </Carousel>
       </Container>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import NavApp from '../components/NavApp';
 
-import './CvPage.scss';
+import '../styles/CvPage.scss';
 
 const CvPage = () => {
   return (

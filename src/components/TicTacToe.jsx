@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import TicTacToeBoard from '../components/TicTacToeBoard';
-import NavApp from '../components/NavApp';
+import TicTacToeBoard from './TicTacToeBoard';
 
-import './TicTacToePage.scss';
+import '../styles/TicTacToe.scss';
 
-export default class TicTacToePage extends Component {
+export default class TicTacToe extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -63,10 +62,8 @@ export default class TicTacToePage extends Component {
       status = 'Le tour est à : ' + (this.state.xIsNext ? 'X' : 'O');
     }
     return (
-      <div className="TicTacToePage">
-        <NavApp />
-        <Container className="ticTacToePage">
-          <h1>Tic Tac Toe</h1>
+      <div className="TicTacToe">
+        <Container className="ticTacToe">
           <h3>{status}</h3>
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />

@@ -44,15 +44,15 @@ module.exports = {
     gif: "https://media0.giphy.com/media/l4KibWpBGWchSqCRy/200.webp?cid=790b7611fe115e00773daeb147e258c478a23594aa47ad49&rid=200.webp",
   },
   gif13: {
-    phrase: "Quand tu refais 10 fois la même commande après 9 échecs en croyant que ça va marcher",
+    phrase: "Quand tu refais 10 fois la même commande en croyant que ça va marcher",
     gif: "https://media.giphy.com/media/10WzOCTS7DTWOA/giphy.gif",
   },
   gif14: {
     phrase: "Quand je veux rajouter un bonus dans un projet fini",
-    gif: "http://media.topito.com/wp-content/uploads/2014/02/oyPFqcv.gif",
+    gif: "https://media.giphy.com/media/13d2jHlSlxklVe/source.gif",
   },
   gif16: {
-    phrase: "Quand je réalise que ça fait deux heures que je bloque à cause d'un point-virgule oublié",
+    phrase: "Quand je réalise que ça fait 2 heures que je bloque à cause d'un point-virgule oublié",
     gif: "https://www.joies-de-supinfo.fr/gifs/quand-je-realise-que-ca-fait-deux-heures-que-je-bloque-a-cause-dun-point-virgule-oublie.gif",
   },
   gif17: {

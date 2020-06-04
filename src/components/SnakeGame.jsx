@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import Snake from '../components/Snake';
-import SnakeFood from '../components/SnakeFood';
-import NavApp from '../components/NavApp';
+import Snake from './Snake';
+import SnakeFood from './SnakeFood';
 
-import './SnakePage.scss';
+import '../styles/SnakeGame.scss';
 
 const getRandomCoordinates = () => {
   let min = 1;
@@ -24,7 +23,7 @@ const initialState = {
   ]
 }
 
-class SnakePage extends Component {
+class SnakeGame extends Component {
   constructor(props) {
     super(props);
     this.state = initialState;
@@ -149,10 +148,8 @@ class SnakePage extends Component {
 
   render() {
     return (
-      <div className="SnakePage">
-        <NavApp />
-        <Container className="snakePage">
-          <h1>Snake</h1>
+      <div className="SnakeGame">
+        <Container className="snakeGame">
           <Row>
             <Col xl="3" lg="3" md="3" sm="1" xs="1" />
             <Col className="game-area" lg="6" md="6" sm="10" xs="10">
@@ -167,4 +164,4 @@ class SnakePage extends Component {
   }
 }
 
-export default SnakePage;
+export default SnakeGame;

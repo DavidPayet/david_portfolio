@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Calendar from 'react-calendar';
-import NavApp from '../components/NavApp';
 
-import './DatePickerPage.scss';
+import '../styles/DatePicker.scss';
 
-class DatePickerPage extends Component {
+class DatePicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,10 +34,8 @@ class DatePickerPage extends Component {
 
   render() {
     return (
-      <div className="DatePickerPage">
-        <NavApp />
-        <Container className='datePickerPage'>
-          <h1>Date Picker</h1>
+      <div className="DatePicker">
+        <Container className='datePicker'>
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col xl="8" lg="8" md="8" sm="10" xs="10">
@@ -67,4 +64,4 @@ class DatePickerPage extends Component {
   }
 }
 
-export default DatePickerPage;
+export default DatePicker;

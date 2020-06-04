@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-scroll";
 import { IoIosArrowDropup } from "react-icons/io";
 
-import './BackToTopButton.scss';
+import '../styles/BackToTopButton.scss';
 
 const BackToTopButton = () => (
   <button type="button" title="Up Page" className="BackToTopButton">

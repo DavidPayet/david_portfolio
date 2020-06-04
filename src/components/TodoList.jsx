@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Form, Input } from 'reactstrap';
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { MdPlaylistAdd } from "react-icons/md";
-import NavApp from '../components/NavApp';
 
-import './ToDoListPage.scss';
+import '../styles/TodoList.scss';
 
 const Todo = ({ todo, completeTodo, index, removeTodo }) => {
   return (
@@ -74,10 +73,8 @@ const ToDoListPage = () => {
   }
 
   return (
-    <div className="ToDoListPage">
-      <NavApp />
-      <Container className='toDoListPage'>
-        <h1>To Do List</h1>
+    <div className="TodoList">
+      <Container className='todoList'>
         <TodoForm addTodo={addTodo} />
         <Row>
           <Col xl="2" lg="2" md="2" sm="1" xs="1" />

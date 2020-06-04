@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-import './Footer.scss';
+import '../styles/Footer.scss';
 
 const Footer = () => {
   return (
