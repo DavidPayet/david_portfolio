@@ -16,7 +16,7 @@ const About = () => {
             <p>De nature curieuse, je me suis intéressé au métier de développeur web.</p>
             <p>Le challenge et les défis de ce domaine font désormais partis de mon quotidien et chaque obstacle franchis m'apporte satisfaction <em>(Très courte certes, mais ça vaut le coup :)</em>.</p>
             <p>J’utilise différents outils illustrés plus bas afin de mettre en &#x153;uvre un site web de A à Z.</p>
-            <p>Stimulant créatif, ce domaine m'offre l'opportunité d'en apprendre tout les jours tout en prenant du plaisir.</p>
+            <p>Véritable stimulant créatif, le développement web m'offre l'opportunité d'en apprendre tout les jours tout en prenant du plaisir.</p>
             <p>Progressant actuellement de manière autonome, je souhaiterai partager mes qualités et compétences au sein d'une équipe pour un travail collaboratif, être confronter aux enjeux des entreprises et faire de ma nouvelle passion mon métier.</p>
           </Col>
         </Row>
