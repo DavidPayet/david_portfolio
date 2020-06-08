@@ -22,5 +22,13 @@
       margin: 0 auto;
       margin-bottom: 100px;
     }
+
+    .MuiButton-outlined {
+      border-color: rgb(33, 62, 73);
+      color: rgb(33, 62, 73);
+      min-height: 50px;
+      font-size: 20px;
+      font-family: 'Lato';
+    }
   }
 }
