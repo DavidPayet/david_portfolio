@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import gifs from '../gif.js';
+import gifs from '../data/gif.js';
 
 import '../styles/Gif.scss';
 

@@ -1,54 +1,38 @@
-import React from 'react';
-import Carousel from 'react-multi-carousel';
-import { Container } from 'reactstrap';
+import React from 'react'
+import { Container, Row, Col } from 'reactstrap'
 
-import ChessPlayersCard from './ChessPlayersCard';
-import CvdCard from './CvdCard';
-import Dpy1fCard from './Dpy1fCard';
-import MiniAppsCard from './MiniAppsCard'
+import portfolioCards from '../data/portfolioCards';
 
-import '../styles/Portfolio.scss';
-import 'react-multi-carousel/lib/styles.css';
-
-
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 5,
-    slidesToSlide: 4, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 4,
-    slidesToSlide: 3, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
+import '../styles/Portfolio.scss'
 
 const Portfolio = () => {
   return (
     <div className="Portfolio" id="portfolio-section">
       <Container className="portfolio">
         <h1>Quelques réalisations...</h1>
-        <Carousel
-          responsive={responsive}
-          infinite={true}
-          draggable={true}
-          showDots={true}
-          className="carousel"
-        >
-          <MiniAppsCard />
-          <Dpy1fCard />
-          <CvdCard />
-          <ChessPlayersCard />
-        </Carousel>
+        <Row>
+          {portfolioCards.map(portfolioCard => (
+            <Col xl="4" lg="4" md="4" sm="12" xs="12"
+              className="hovereffect"
+              key={portfolioCard.id}
+            >
+              <img className="img-responsive" src={portfolioCard.photo} alt={portfolioCard.title} />
+              <div className="overlay">
+                <h2>{portfolioCard.title} </h2>
+                <a className="info"
+                  href={portfolioCard.link}
+                  target={portfolioCard.target}
+                  rel={portfolioCard.rel}
+                >
+                  {portfolioCard.description}
+                </a>
+              </div>
+            </Col>
+          ))}
+        </Row>
       </Container>
     </div>
-  );
+  )
 }
 
-export default Portfolio;
+export default Portfolio
