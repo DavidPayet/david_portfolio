@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-
 .CvPage {
   background: linear-gradient(to left, #c5d5cb, #e3e0cf);
   font-family: 'Lato';
-  padding-right: 30px;
-  padding-bottom: 130px;
-  padding-top: 70px;
+  padding: 70px 30px 130px 30px;
   width: 100%;
 
   .cvPage {
@@ -21,10 +18,6 @@
       font-family: 'Lato';
       font-weight: bold;
       padding-bottom: 100px;
-    }
-
-    .cv {
-      padding-left: 35px;
     }
   }
 }

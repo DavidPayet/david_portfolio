@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { FiDownload } from 'react-icons/fi';
+import { FaRegEye } from 'react-icons/fa';
 
 import '../styles/Competences.scss';
 
@@ -37,8 +38,18 @@ const Competences = () => {
         <Row>
           <Col xl="1" lg="1" md="1" sm="2" xs="2" />
           <Col className={classes.root} xl="10" lg="10" md="10" sm="8" xs="8">
-            <Button variant="outlined" href="/cv">
+            <Button variant="outlined" href="/medias/curriculum_vitae.pdf" download>
               <FiDownload style={{ fontSize: "20px", marginRight: "10px" }} /> Télécharger mon CV
+              </Button>
+          </Col>
+          <Col xl="1" lg="1" md="1" sm="2" xs="2" />
+        </Row>
+          <p>Ou simplement</p>
+          <Row>
+          <Col xl="1" lg="1" md="1" sm="2" xs="2" />
+          <Col className={classes.root} xl="10" lg="10" md="10" sm="8" xs="8">
+            <Button variant="outlined" href="/cv" >
+              <FaRegEye style={{ fontSize: "20px", marginRight: "10px" }} /> Visualiser mon CV
               </Button>
           </Col>
           <Col xl="1" lg="1" md="1" sm="2" xs="2" />

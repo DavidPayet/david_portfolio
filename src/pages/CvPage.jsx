@@ -9,9 +9,9 @@ const CvPage = () => {
     <div className="CvPage">
       <NavApp />
       <Container className="cvPage">
-        <h1>Télécharger mon CV</h1>
+        <h1>Curriculum Vitae</h1>
         <Row>
-          <Col className="cv" xl="12" lg="12" md="12" sm="12" xs="12">
+          <Col xl="12" lg="12" md="12" sm="12" xs="12">
             <iframe height="1200px" width="100%" src="/medias/curriculum_vitae.pdf" align="middle" title="cv" />
           </Col>
         </Row>
