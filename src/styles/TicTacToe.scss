@@ -83,14 +83,12 @@
       font-family: 'Lato';
       background-color: rgb(33, 62, 73);
       color: rgb(241, 241, 243);
-      margin-top: 35px;
-      border-radius: 0.25rem;
+      border: none;
     }
 
     button:hover {
       background-color: rgb(66, 151, 207);
       transition: .1s ease-out;
-      outline: none;
     }
 
     button:focus {
