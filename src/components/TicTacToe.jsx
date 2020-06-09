@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import TicTacToeBoard from './TicTacToeBoard';
 
 import '../styles/TicTacToe.scss';
@@ -49,9 +49,9 @@ export default class TicTacToe extends Component {
       const desc = move ? 'Go to #' + move : 'Reset';
       return (
         <li key={move}>
-          <button onClick={() => { this.jumpTo(move) }}>
+          <Button onClick={() => { this.jumpTo(move) }}>
             {desc}
-          </button>
+          </Button>
         </li>
       )
     });

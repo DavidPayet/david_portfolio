@@ -15,8 +15,8 @@
     }
 
     .gifMedias {
-      width: 80%;
-      height: auto;
+      width: 100%;
+      height: 350px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -25,7 +25,6 @@
     }
 
     .btn-next {
-      border: 0px;
       height: 40px;
       width: 100px;
       font-family: 'Lato';
@@ -37,8 +36,6 @@
     .btn-next:hover {
       background-color: rgb(66, 151, 207);
       transition: .1s ease-out;
-      outline: none;
-
     }
   }
 }

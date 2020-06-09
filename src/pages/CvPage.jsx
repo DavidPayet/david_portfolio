@@ -12,7 +12,7 @@ const CvPage = () => {
         <h1>Curriculum Vitae</h1>
         <Row>
           <Col xl="12" lg="12" md="12" sm="12" xs="12">
-            <iframe height="1200px" width="100%" src="/medias/curriculum_vitae.pdf" align="middle" title="cv" />
+            <iframe src="/medias/curriculum_vitae.pdf" title="cv" />
           </Col>
         </Row>
       </Container>

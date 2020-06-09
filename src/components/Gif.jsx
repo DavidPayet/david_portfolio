@@ -34,13 +34,13 @@ class Gif extends Component {
         <Container className="gif">
           <p>{this.state.phrase}</p>
           <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1"/>
-            <Col xl="8" lg="8" md="8" sm="10" xs="10">
+            <Col xl="2" lg="2" md="2" sm="0" xs="0"/>
+            <Col xl="8" lg="8" md="8" sm="12" xs="12">
               <img className="gifMedias" src={this.state.gif} alt="gif" />
               <br />
               <Button className="btn-next" onClick={e => this.generateGif(e)}>Suivant</Button>
             </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1"/>
+            <Col xl="2" lg="2" md="2" sm="0" xs="0"/>
           </Row>
         </Container>
       </div>
