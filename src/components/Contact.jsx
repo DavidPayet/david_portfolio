@@ -52,7 +52,7 @@ export default class Contact extends React.Component {
                 netlify-honeypot="bot-field"
                 data-netlify-recaptcha="true"
               >
-                <input type="hidden" name="form-name" value="contactform" netlify-honeypot="bot-field" />
+                <input type="hidden" name="form-name" value="contactform" />
                 <div className="fields">
                   <div className="field">
                     <label>Nom</label>
