@@ -49,8 +49,10 @@ export default class Contact extends React.Component {
                 name="contactform"
                 method="post"
                 data-netlify="true"
+                netlify-honeypot="bot-field"
+                data-netlify-recaptcha="true"
               >
-                <input type="hidden" name="form-name" value="contactform" netlify-honeypot="bot-field"/>
+                <input type="hidden" name="form-name" value="contactform" netlify-honeypot="bot-field" />
                 <div className="fields">
                   <div className="field">
                     <label>Nom</label>
@@ -72,12 +74,12 @@ export default class Contact extends React.Component {
                   </div>
                   <div className="field">
                     <label>Message</label>
-                    <textarea
+                    <textarea>
                       name="message"
                       value={message}
                       rows="4"
                       onChange={this.handleChange}
-                    />
+                    </textarea>
                   </div>
                   <div data-netlify-recaptcha="true"></div>
                 </div>
