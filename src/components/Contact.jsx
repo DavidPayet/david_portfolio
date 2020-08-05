@@ -48,10 +48,7 @@ export default class Contact extends React.Component {
                 onSubmit={this.handleSubmit}
                 name="contactform"
                 method="post"
-                netlify="true"
                 data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                data-netlify-recaptcha="true"
               >
                 <input type="hidden" name="form-name" value="contactform" />
                 <div className="fields">
@@ -82,9 +79,7 @@ export default class Contact extends React.Component {
                       onChange={this.handleChange}
                     />
                   </div>
-                  <div>
-                    <div data-netlify-recaptcha="true"></div>
-                  </div>
+                  <div data-netlify-recaptcha="true"></div>
                 </div>
                 <Button variant="outlined" type="submit">Envoyer</Button>
               </form>
