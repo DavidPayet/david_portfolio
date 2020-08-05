@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import { MdLocationCity } from "react-icons/md";
 import { FiMail } from "react-icons/fi";
+import Button from '@material-ui/core/Button';
 
 import '../styles/Contact.scss'
 
@@ -25,7 +26,7 @@ export default class Contact extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "contactform", ...this.state })
     })
       .then(() => alert("Success!"))
       .catch(error => alert(error));
@@ -81,11 +82,11 @@ export default class Contact extends React.Component {
                       onChange={this.handleChange}
                     />
                   </div>
-                  <div className="recaptchafield">
+                  <div>
                     <div data-netlify-recaptcha="true"></div>
                   </div>
                 </div>
-                <button type="submit">Envoyer</button>
+                <Button variant="outlined" type="submit">Envoyer</Button>
               </form>
             </Col>
             <Col className="info" xl="6" lg="6" md="6" sm="12" xs="12" >
