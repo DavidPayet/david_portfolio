@@ -79,8 +79,7 @@ export default class Contact extends React.Component {
                       value={message}
                       rows="4"
                       onChange={this.handleChange}
-                    >
-                    </textarea>
+                    />
                   </div>
                   <div data-netlify-recaptcha="true"></div>
                 </div>
