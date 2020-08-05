@@ -27,7 +27,7 @@ const Contact = () => {
                   <textarea name="message" id="message" rows="4" />
                 </div>
                 <div className="field">
-                  <div data-netlify-recaptcha="true" />
+                  <div data-netlify-recaptcha="true"></div>
                 </div>
               </div>
               <Button type="submit">Envoyer</Button>
