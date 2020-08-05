@@ -1,58 +1,112 @@
 import React from 'react'
-import { Container, Row, Col, Button } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 import { MdLocationCity } from "react-icons/md";
 import { FiMail } from "react-icons/fi";
 
 import '../styles/Contact.scss'
 
-const Contact = () => {
-  return (
-    <div className="Contact" id="contact-section">
-      <Container className="contact">
-        <h1>Me contacter</h1>
-        <Row>
-          <Col xl="6" lg="6" md="6" sm="12" xs="12" >
-            <form action="POST" data-netlify="true">
-              <div className="fields">
-                <div className="field">
-                  <label>Nom</label>
-                  <input type="text" name="name" id="name" />
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      message: ""
+    };
+  }
+
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+  render() {
+    const { name, email, message } = this.state;
+    return (
+      <div className="Contact" id="contact-section">
+        <Container className="contact">
+          <h1>Me contacter</h1>
+          <Row>
+            <Col xl="6" lg="6" md="6" sm="12" xs="12" >
+              <form
+                onSubmit={this.handleSubmit}
+                name="contactform"
+                method="post"
+                netlify="true"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                data-netlify-recaptcha="true"
+              >
+                <input type="hidden" name="form-name" value="contactform" />
+                <div className="fields">
+                  <div className="field">
+                    <label>Nom</label>
+                    <input
+                      type="text"
+                      name="name"
+                      value={name}
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                  <div className="field">
+                    <label>Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={email}
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                  <div className="field">
+                    <label>Message</label>
+                    <textarea
+                      name="message"
+                      value={message}
+                      rows="4"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                  <div className="recaptchafield">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
                 </div>
-                <div className="field">
-                  <label>Email</label>
-                  <input type="email" name="email" id="email" />
-                </div>
-                <div className="field">
-                  <label>Message</label>
-                  <textarea name="message" id="message" rows="4" />
-                </div>
-                <div className="field">
-                  <div data-netlify-recaptcha="true"></div>
-                </div>
-              </div>
-              <Button type="submit">Envoyer</Button>
-            </form>
-          </Col>
-          <Col className="info" xl="6" lg="6" md="6" sm="12" xs="12" >
-            <ul>
-              <Row>
-              <li>
-                <MdLocationCity className="icons" />Bordeaux
+                <button type="submit">Envoyer</button>
+              </form>
+            </Col>
+            <Col className="info" xl="6" lg="6" md="6" sm="12" xs="12" >
+              <ul>
+                <Row>
+                  <li>
+                    <MdLocationCity className="icons" />Bordeaux
                 </li>
                 </Row>
                 <Row>
-              <li>
-                <a href="mailto:davidpayet570@gmail.com">
-                  <FiMail className="icons" />davidpayet570@gmail.com
+                  <li>
+                    <a href="mailto:davidpayet570@gmail.com">
+                      <FiMail className="icons" />davidpayet570@gmail.com
                 </a>
-              </li>
-              </Row>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  )
+                  </li>
+                </Row>
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    )
+  }
 }
-
-export default Contact
