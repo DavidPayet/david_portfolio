@@ -52,7 +52,7 @@ export default class Contact extends React.Component {
                 netlify-honeypot="bot-field"
                 data-netlify-recaptcha="true"
               >
-                <input type="hidden" name="form-name" value="contactform" />
+                <input type="hidden" name="bot-field" value="contactform" />
                 <div className="fields">
                   <div className="field">
                     <label>Nom</label>
@@ -74,11 +74,12 @@ export default class Contact extends React.Component {
                   </div>
                   <div className="field">
                     <label>Message</label>
-                    <textarea>
+                    <textarea
                       name="message"
                       value={message}
                       rows="4"
                       onChange={this.handleChange}
+                    >
                     </textarea>
                   </div>
                   <div data-netlify-recaptcha="true"></div>
