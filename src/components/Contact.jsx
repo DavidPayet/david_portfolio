@@ -27,11 +27,19 @@ export default class Contact extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
-  }
+  };
 
   recaptchaLoaded() {
     console.log("captcha is successfully loaded!")
-  }
+  };
+  
+  verifyCallback(response) {
+    if (response) {
+      this.setState({
+        isVerified: true
+      })
+    }
+  };
 
   handleClick(e) {
     if (this.state.isVerified) {
@@ -39,7 +47,7 @@ export default class Contact extends React.Component {
     } else {
       alert("Veuillez cocher la case obligatoire.")
     }
-  }
+  };
 
   handleSubmit = e => {
     fetch("/", {
@@ -55,13 +63,6 @@ export default class Contact extends React.Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-  verifyCallback(response) {
-    if (response) {
-      this.setState({
-        isVerified: true
-      })
-    }
-  }
 
   render() {
     const { name, email, message } = this.state;
