@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import CvPage from './pages/CvPage';
-import Footer from './components/Footer';
 import ChessPlayersPage from './pages/ChessPlayersPage';
 import MiniAppsPage from './pages/MiniAppsPage';
 
@@ -18,7 +17,6 @@ class App extends Component {
           <Route onUpdate={window.scrollTo(0, 0)} exact path="/miniapps" component={MiniAppsPage} />
           <Route onUpdate={window.scrollTo(0, 0)} exact path="/chessplayers" component={ChessPlayersPage} />
         </Switch>
-        <Footer />
       </div>
     );
   }

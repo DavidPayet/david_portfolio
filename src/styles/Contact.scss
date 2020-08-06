@@ -2,11 +2,15 @@
 
 .Contact {
   padding-top: 130px;
-  padding-bottom: 130px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("/medias/mountain.jpg");
+  background-position: calc(100% - 1rem) center;
+  text-overflow: ellipsis;
+  background-size: cover;
 
   .contact {
     h1 {
-      color: rgb(33, 62, 73);
+      color: white;
       font-family: 'Lato';
       font-weight: bold;
       padding-bottom: 100px;
@@ -20,33 +24,26 @@
       margin-bottom: 40px;
     }
 
-    .phrase {
-      color: rgb(33, 62, 73);
-      font-family: 'Lato';
-      font-size: 20px;
-      font-weight: lighter;
-    }
-
     .fields {
       .field {
         padding-bottom: 30px;
 
         label {
-          color: rgb(33, 62, 73);
+          color: white;
           font-family: 'Lato';
           font-weight: bold;
           display: flex;
           padding-left: 5px;
-          font-size: 20px;
+          font-size: 18px;
           font-weight: lighter;
         }
 
         input {
           appearance: none;
-          background: rgba(255, 255, 255, 0.025);
+          background: rgba(255, 255, 255, 0.055);
           border-radius: 5px;
-          border: solid 2px rgba(33, 62, 73, 0.336);
-          color: rgb(33, 62, 73);
+          border: solid 2px rgba(255, 255, 255, 0.384);
+          color: white;
           outline: 0;
           padding: 0 1em;
           text-decoration: none;
@@ -61,8 +58,8 @@
           background: rgba(255, 255, 255, 0.025);
           border-radius: 5px;
           border: none;
-          border: solid 2px rgba(33, 62, 73, 0.336);
-          color: rgb(33, 62, 73);
+          border: solid 2px rgba(255, 255, 255, 0.384);
+          color: white;
           display: block;
           outline: 0;
           padding: 0 1em;
@@ -76,37 +73,65 @@
     }
 
     .MuiButton-outlined {
-      border-color: rgb(33, 62, 73);
-      color: rgb(33, 62, 73);
+      border: solid 2px rgba(255, 255, 255, 0.384);
+      color: white;
       min-height: 40px;
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Lato';
+      margin: 30px 0 50px 0;
     }
 
 
     .info {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: top;
 
       li,
       a {
         .icons {
-          color: rgb(33, 62, 73);
-          margin: 0px 10px;
-
+          color: white;
+          margin: 10px;
         }
 
-        color: rgb(33, 62, 73);
+        color: white;
         font-family: 'Lato';
-        font-size: 20px;
+        font-size: 16px;
         font-weight: lighter;
         list-style: none;
-        margin: 30px 0px;
+        margin: 20px 0px;
+        letter-spacing: 1px;
       }
 
       ul {
         padding-inline-start: 0px;
+      }
+
+    }
+
+    .footer {
+      font-family: 'Lato';
+      color: rgba(255, 255, 255, 0.125);
+      margin-top: 16px;
+      margin-bottom: 0px;
+      border-top: solid 2px rgba(255, 255, 255, 0.125);
+      display: block;
+      margin: 4em 0 2em 0;
+      padding: 2em 0 0 0;
+      width: 100%;
+      font-size: 15px;
+      font-weight: lighter;
+
+      ul {
+        padding-inline-start: 0px;
+      }
+
+      .dp-logo {
+        height: 20px;
+      }
+
+      ul {
+        list-style: none;
       }
     }
   }
