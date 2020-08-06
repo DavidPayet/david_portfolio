@@ -58,7 +58,6 @@ export default class Contact extends React.Component {
                   type="hidden"
                   name="bot-field"
                   value="contactform"
-                  required
                 />
                 <div className="fields">
                   <div className="field">
@@ -68,6 +67,7 @@ export default class Contact extends React.Component {
                       name="name"
                       value={name}
                       onChange={this.handleChange}
+                      required
                     />
                   </div>
                   <div className="field">
