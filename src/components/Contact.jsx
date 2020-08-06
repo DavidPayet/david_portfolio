@@ -1,5 +1,4 @@
 import React from 'react';
-import Recaptcha from 'react-recaptcha';
 import { Container, Row, Col } from 'reactstrap';
 import { MdLocationCity } from "react-icons/md";
 import { FiMail } from "react-icons/fi";
@@ -20,33 +19,9 @@ export default class Contact extends React.Component {
       name: "",
       email: "",
       message: "",
-      isVerified: false
     };
-    this.handleClick = this.handleClick.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
-    this.verifyCallback = this.verifyCallback.bind(this);
-  };
-
-  recaptchaLoaded() {
-    console.log("captcha is successfully loaded!")
-  };
-
-  verifyCallback(response) {
-    if (response) {
-      this.setState({
-        isVerified: true
-      })
-    }
-  };
-
-  handleClick(e) {
-    if (this.state.isVerified) {
-      this.handleSubmit(e)
-    } else {
-      alert("Veuillez cocher la case obligatoire.")
-    }
   };
 
   handleSubmit = e => {
@@ -73,13 +48,18 @@ export default class Contact extends React.Component {
           <Row>
             <Col xl="6" lg="6" md="6" sm="12" xs="12" >
               <form
-                onSubmit={this.handleClick}
+                onSubmit={this.handleSubmit}
                 name="contactform"
                 method="post"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
               >
-                <input type="hidden" name="bot-field" value="contactform" />
+                <input
+                  type="hidden"
+                  name="bot-field"
+                  value="contactform"
+                  required
+                />
                 <div className="fields">
                   <div className="field">
                     <label>Nom</label>
@@ -97,6 +77,7 @@ export default class Contact extends React.Component {
                       name="email"
                       value={email}
                       onChange={this.handleChange}
+                      required
                     />
                   </div>
                   <div className="field">
@@ -106,16 +87,11 @@ export default class Contact extends React.Component {
                       value={message}
                       rows="4"
                       onChange={this.handleChange}
+                      required
                     />
                   </div>
-                  <Recaptcha
-                    sitekey="6LdPYrsZAAAAAJxS4uiOde5SXAqlL2UaIhaTwaT-"
-                    render="explicit"
-                    onloadCallback={this.recaptchaLoaded}
-                    verifyCallback={this.verifyCallback}
-                  />
                 </div>
-                <Button variant="outlined" onClick={this.handleClick} type="submit">Envoyer</Button>
+                <Button variant="outlined" type="submit">Envoyer</Button>
               </form>
             </Col>
             <Col className="info" xl="6" lg="6" md="6" sm="12" xs="12" >
