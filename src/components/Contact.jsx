@@ -73,7 +73,7 @@ export default class Contact extends React.Component {
           <Row>
             <Col xl="6" lg="6" md="6" sm="12" xs="12" >
               <form
-                onSubmit={this.handleSubmit}
+                onSubmit={this.handleClick}
                 name="contactform"
                 method="post"
                 data-netlify="true"
