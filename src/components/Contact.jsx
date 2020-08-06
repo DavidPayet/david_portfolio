@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { MdLocationCity } from "react-icons/md";
-import { FiMail } from "react-icons/fi";
+import { BsGeo } from "react-icons/bs";
+import { FiMail, FiPhone, FiGithub } from "react-icons/fi";
+import { FaLinkedin } from "react-icons/fa";
 import Button from '@material-ui/core/Button';
 
 import '../styles/Contact.scss'
@@ -96,18 +97,43 @@ export default class Contact extends React.Component {
               <ul>
                 <Row>
                   <li>
-                    <MdLocationCity className="icons" />Bordeaux
+                    <BsGeo className="icons" />33000, Bordeaux
                 </li>
                 </Row>
                 <Row>
                   <li>
                     <a href="mailto:davidpayet570@gmail.com">
                       <FiMail className="icons" />davidpayet570@gmail.com
-                </a>
+                    </a>
+                  </li>
+                </Row>
+                <Row>
+                  <li>
+                    <FiPhone className="icons" />+33 6 20 38 42 33
+                </li>
+                </Row>
+                <Row>
+                  <li>
+                    <a href="https://www.linkedin.com/in/david-payet/" target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin className="icons" />https://www.linkedin.com/in/david-payet
+                    </a>
+                  </li>
+                </Row>
+                <Row>
+                  <li>
+                    <a href="https://github.com/DavidPayet" target="_blank" rel="noopener noreferrer">
+                      <FiGithub className="icons" />https://github.com/DavidPayet
+                    </a>
                   </li>
                 </Row>
               </ul>
             </Col>
+          </Row>
+          <Row className="footer">
+            <ul >
+              <li>©Copyright 2020 - All right reserved</li>
+              <li>Davi <img className="dp-logo" src="/medias/dp-logo2.png" alt="dp-logo" /> ayet</li>
+            </ul>
           </Row>
         </Container>
       </div>
