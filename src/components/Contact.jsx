@@ -1,5 +1,6 @@
-import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import React from 'react';
+import Recaptcha from 'react-recaptcha';
+import { Container, Row, Col } from 'reactstrap';
 import { MdLocationCity } from "react-icons/md";
 import { FiMail } from "react-icons/fi";
 import Button from '@material-ui/core/Button';
@@ -18,8 +19,26 @@ export default class Contact extends React.Component {
     this.state = {
       name: "",
       email: "",
-      message: ""
+      message: "",
+      isVerified: false
     };
+    this.handleClick = this.handleClick.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
+    this.verifyCallback = this.verifyCallback.bind(this);
+  }
+
+  recaptchaLoaded() {
+    console.log("captcha is successfully loaded!")
+  }
+
+  handleClick(e) {
+    if (this.state.isVerified) {
+      this.handleSubmit(e)
+    } else {
+      alert("Veuillez cocher la case obligatoire.")
+    }
   }
 
   handleSubmit = e => {
@@ -36,6 +55,14 @@ export default class Contact extends React.Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
+  verifyCallback(response) {
+    if (response) {
+      this.setState({
+        isVerified: true
+      })
+    }
+  }
+
   render() {
     const { name, email, message } = this.state;
     return (
@@ -50,7 +77,6 @@ export default class Contact extends React.Component {
                 method="post"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
-                data-netlify-recaptcha="true"
               >
                 <input type="hidden" name="bot-field" value="contactform" />
                 <div className="fields">
@@ -81,11 +107,14 @@ export default class Contact extends React.Component {
                       onChange={this.handleChange}
                     />
                   </div>
-                  <p>
-                    <div data-netlify-recaptcha="true" name="recaptcha"></div>
-                  </p>
+                  <Recaptcha
+                    sitekey="6LdPYrsZAAAAAJxS4uiOde5SXAqlL2UaIhaTwaT-"
+                    render="explicit"
+                    onloadCallback={this.recaptchaLoaded}
+                    verifyCallback={this.verifyCallback}
+                  />
                 </div>
-                <Button variant="outlined" type="submit">Envoyer</Button>
+                <Button variant="outlined" onClick={this.handleClick}>Envoyer</Button>
               </form>
             </Col>
             <Col className="info" xl="6" lg="6" md="6" sm="12" xs="12" >
