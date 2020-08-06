@@ -32,7 +32,7 @@ export default class Contact extends React.Component {
   recaptchaLoaded() {
     console.log("captcha is successfully loaded!")
   };
-  
+
   verifyCallback(response) {
     if (response) {
       this.setState({
@@ -115,7 +115,7 @@ export default class Contact extends React.Component {
                     verifyCallback={this.verifyCallback}
                   />
                 </div>
-                <Button variant="outlined" onClick={this.handleClick}>Envoyer</Button>
+                <Button variant="outlined" onClick={this.handleClick} type="submit">Envoyer</Button>
               </form>
             </Col>
             <Col className="info" xl="6" lg="6" md="6" sm="12" xs="12" >
