@@ -81,6 +81,7 @@ export default class Contact extends React.Component {
                       onChange={this.handleChange}
                     />
                   </div>
+                  <div data-netlify-recaptcha="true" name="recaptcha"></div>
                 </div>
                 <Button variant="outlined" type="submit">Envoyer</Button>
               </form>
