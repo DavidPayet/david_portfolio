@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row } from 'reactstrap';
-//import { Link } from "react-scroll";
 
 import '../styles/Header.scss';
 
