@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
 .Portfolio {
   background-color: rgb(241, 241, 243);
   padding-top: 130px;
   padding-bottom: 130px;
-  font-family: 'Lato';
 
   .portfolio {
 
     h1 {
       color: rgb(33, 62, 73);
-      font-family: 'Lato';
-      font-weight: bold;
+      font-weight: lighter;
+      letter-spacing: 0.1em;
       padding-bottom: 100px;
     }
 
