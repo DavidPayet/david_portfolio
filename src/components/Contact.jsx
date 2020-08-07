@@ -115,7 +115,7 @@ export default class Contact extends React.Component {
                 <Row>
                   <li>
                     <a href="https://www.linkedin.com/in/david-payet/" target="_blank" rel="noopener noreferrer">
-                      <FaLinkedin className="icons" />https://www.linkedin.com/in/david-payet
+                      <FaLinkedin className="icons" />www.linkedin.com/in/david-payet
                     </a>
                   </li>
                 </Row>
@@ -132,7 +132,7 @@ export default class Contact extends React.Component {
           <Row className="footer">
             <ul >
               <li>©Copyright 2020 - All right reserved</li>
-              <li>Davi <img className="dp-logo" src="/medias/dp-logo2.png" alt="dp-logo" /> ayet</li>
+              <li>Davi<img className="dp-logo" src="/medias/dp-logo2.png" alt="dp-logo" />ayet</li>
             </ul>
           </Row>
         </Container>
