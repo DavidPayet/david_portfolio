@@ -1,22 +1,39 @@
 import React, { useState } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem
+} from 'reactstrap';
 import { Link } from "react-scroll";
 
 import '../styles/NavBar.scss';
+import { useEffect } from 'react';
 
-const NavBar = (props) => {
-  const [collapsed, setCollapsed] = useState(true);
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleNavbar = () => setCollapsed(!collapsed);
+  const toggle = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 640 || document.documentElement.scrollTop > 640) {
+        document.getElementById("header").style.backgroundColor = "RGBA(0,0,0,0.43)";
+        document.getElementById("header").style.transition = ".5s";
+      } else {
+        document.getElementById("header").style.backgroundColor = "transparent";
+      }
+    }
+  })
 
   return (
-    <div className="NavBar">
-      <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">
-          <img className="dp-logo" src="/medias/dp-logo.png" alt="dp-logo" />
-        </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-        <Collapse isOpen={!collapsed} navbar>
+    <div className="NavBar" id="header">
+      <Navbar light expand="md">
+        <NavbarToggler onClick={toggle} className="mr-2" />
+        <Collapse isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
               <Link
@@ -28,7 +45,7 @@ const NavBar = (props) => {
                 offset={70}
                 duration={500}
               >
-                A propos
+                A PROPOS
               </Link>
               <br />
             </NavItem>
@@ -42,7 +59,7 @@ const NavBar = (props) => {
                 offset={70}
                 duration={500}
               >
-                Compétences
+                COMPETENCES
               </Link>
             </NavItem>
             <NavItem>
@@ -55,7 +72,7 @@ const NavBar = (props) => {
                 offset={70}
                 duration={500}
               >
-                Portfolio
+                PORTFOLIO
               </Link>
             </NavItem>
             <NavItem>
@@ -68,11 +85,8 @@ const NavBar = (props) => {
                 offset={70}
                 duration={500}
               >
-                Contact
+                CONTACT
               </Link>
-            </NavItem>
-            <NavItem>
-              <NavLink className="section-link" href="/cv">Mon CV</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -80,5 +94,6 @@ const NavBar = (props) => {
     </div>
   );
 }
+
 
 export default NavBar;

@@ -1,29 +1,30 @@
 .NavBar {
   position: fixed;
   width: 100%;
+  height: 60px;
+  font-weight: lighter;
+  letter-spacing: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
-  height: 50px;
-
-  .dp-logo {
-    height: 40px;
-  }
 
   .navbar-light .navbar-toggler {
     border: none;
   }
 
   a.section-link {
-    color: rgb(241, 241, 243);
-    font-size: 17px;
+    color: rgba(241, 241, 243, 0.534);
+    font-size: 12px;
     cursor: pointer;
-    padding-top: 8px;
-    float: right;
-    background-color: rgba(33, 62, 73, 0.438);
-    width: 150px;
+    padding: 0 30px;
+    font-weight: lighter;
+    text-decoration: none;
   }
 
   a.section-link:hover {
     color: rgb(241, 241, 243);
+    transition: .5s;
   }
 
   button.navbar-toggler:focus {
@@ -33,7 +34,6 @@
   a.section-link.nav-link {
     color: rgb(241, 241, 243);
     cursor: pointer;
-    align-items: right;
   }
 
   a.section-link.nav-link:hover {
