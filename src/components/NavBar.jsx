@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Collapse,
   Navbar,
@@ -7,9 +7,9 @@ import {
   NavItem
 } from 'reactstrap';
 import { Link } from "react-scroll";
+import { RiMenuLine } from 'react-icons/ri';
 
 import '../styles/NavBar.scss';
-import { useEffect } from 'react';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,22 +17,26 @@ const NavBar = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    window.onscroll = function () { scrollFunction() };
+    let header = document.querySelector("#header");
+    let lastScrollValue = 0;
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 640 || document.documentElement.scrollTop > 640) {
-        document.getElementById("header").style.backgroundColor = "RGBA(0,0,0,0.43)";
-        document.getElementById("header").style.transition = ".5s";
+    document.addEventListener('scroll', () => {
+      let top = document.documentElement.scrollTop;
+      if (lastScrollValue < top) {
+        header.classList.add("hidden");
       } else {
-        document.getElementById("header").style.backgroundColor = "transparent";
+        header.classList.remove("hidden");
       }
-    }
+      lastScrollValue = top;
+    });
   })
 
   return (
-    <div className="NavBar" id="header">
-      <Navbar light expand="md">
-        <NavbarToggler onClick={toggle} className="mr-2" />
+    <div className="NavBar" >
+      <Navbar light expand="md" id="header">
+        <NavbarToggler onClick={toggle} className="toggleBtn">
+          <RiMenuLine />
+        </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
