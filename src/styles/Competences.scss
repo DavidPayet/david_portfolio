@@ -35,10 +35,11 @@
     }
 
     .MuiButton-outlined {
-      border-color: white;
+      border: solid 2px rgba(255, 255, 255, 0.384);
       color: white;
-      min-height: 50px;
-      font-size: 20px;
+      min-height: 40px;
+      font-size: 18px;
+      margin: 30px auto;
       font-weight: lighter;
       letter-spacing: 0.1em;
     }
