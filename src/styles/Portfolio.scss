@@ -1,12 +1,17 @@
 .Portfolio {
-  background-color: rgb(241, 241, 243);
   padding-top: 130px;
   padding-bottom: 130px;
+  background-color: rgb(47, 49, 64);
+  color: white;
+  -webkit-transform: skewy(4deg);
+  transform: skewy(4deg);
+  margin-top: -45px;
 
   .portfolio {
+    -webkit-transform: skewy(-4deg);
+    transform: skewy(-4deg);
 
     h1 {
-      color: rgb(33, 62, 73);
       font-weight: lighter;
       letter-spacing: 0.1em;
       padding-bottom: 100px;

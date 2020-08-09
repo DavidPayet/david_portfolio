@@ -1,21 +1,27 @@
 .Competences {
   padding-top: 130px;
   padding-bottom: 130px;
+  background-color: rgb(72, 84, 139);
+  color: white;
+  -webkit-transform: skewy(-4deg 0);
+  transform: skewy(-4deg 0);
+  margin-top: -45px;
 
   .competences {
+    -webkit-transform: skewy(4deg 0);
+    transform: skewy(4deg 0);
+
     img.logos {
       padding: 20px;
     }
 
     h1 {
-      color: rgb(33, 62, 73);
       font-weight: lighter;
       letter-spacing: 0.1em;
       padding-bottom: 100px;
     }
 
     p {
-      color: rgb(33, 62, 73);
       font-weight: lighter;
       letter-spacing: 0.1em;
       font-size: 20px;
@@ -29,8 +35,8 @@
     }
 
     .MuiButton-outlined {
-      border-color: rgb(33, 62, 73);
-      color: rgb(33, 62, 73);
+      border-color: white;
+      color: white;
       min-height: 50px;
       font-size: 20px;
       font-weight: lighter;
