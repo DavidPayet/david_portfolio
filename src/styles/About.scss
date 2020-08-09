@@ -10,27 +10,49 @@
   .about {
     -webkit-transform: skewy(4deg);
     transform: skewy(4deg);
+    padding: 0 80px;
 
-    h1 {
-      padding-bottom: 100px;
-      font-weight: lighter;
-      letter-spacing: 0.1em;
+    .text {
+      padding-right: 70px;
+
+      .sub-title {
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+
+        h2 {
+          margin: 20px 0 0 0;
+          font-weight: lighter;
+          letter-spacing: 0.1em;
+          font-size: 30px;
+        }
+      }
+
+      p {
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        font-weight: lighter;
+        text-align: left;
+        line-height: 25px;
+      }
     }
 
-    p {
-      text-align: center;
-      font-size: 15px;
-      letter-spacing: 0.2em;
-      font-weight: lighter;
+    .photo-col {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      .photo {
+        border-radius: 200px;
+        background: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
+        opacity: .8;
+      }
     }
 
-    .photo {
-      margin-bottom: 80px;
-      width: 70%;
-      height: auto;
-      border-radius: 200px;
-      background: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
-      opacity: .8;
+    @media screen and (max-width: 640px) {
+      .text {
+        padding-right: 0;
+      }
     }
   }
 }
