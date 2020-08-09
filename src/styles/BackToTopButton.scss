@@ -1,6 +1,5 @@
-.BackToTopButton {
+button.BackToTopButton {
   background-color: transparent;
-  color: rgb(33, 62, 73);
   font-size: 40px;
   position: fixed;
   bottom: 1rem;
@@ -8,6 +7,10 @@
   cursor: pointer;
   padding: 0;
   border: none;
+
+  a.active {
+    color: white;
+  }
 
   &:hover {
     .rubberBand {

@@ -1,11 +1,17 @@
 .About {
-  background-color: rgb(241, 241, 243);
+  background-color: rgb(79, 91, 148);
   padding-top: 130px;
   padding-bottom: 130px;
+  color: white;
+  -webkit-transform: skewy(-4deg);
+  transform: skewy(-4deg);
+  margin-top: -45px;
 
   .about {
+    -webkit-transform: skewy(4deg);
+    transform: skewy(4deg);
+
     h1 {
-      color: rgb(33, 62, 73);
       padding-bottom: 100px;
       font-weight: lighter;
       letter-spacing: 0.1em;
@@ -13,16 +19,18 @@
 
     p {
       text-align: center;
-      color: rgb(33, 62, 73);
-      font-size: 19px;
+      font-size: 15px;
+      letter-spacing: 0.2em;
+      font-weight: lighter;
     }
 
     .photo {
       margin-bottom: 80px;
       width: 70%;
       height: auto;
-      background: linear-gradient(to left, #c5d5cb, #e3e0cf);
-      border-radius: 39% 10% 39% 10% / 42% 10% 37% 10%;
+      border-radius: 200px;
+      background: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
+      opacity: .8;
     }
   }
 }
