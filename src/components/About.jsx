@@ -13,7 +13,7 @@ const About = () => {
           </Col>
           <Col xl="8" lg="8" md="8" sm="12" xs="12" className="text">
             <Row className="sub-title">
-              <h2>A Propos</h2>
+              <h2>A PROPOS</h2>
             </Row>
             <Row>
               <p>Après 10 ans d'une expérience militaire, je me reconvertis dans le développement web en choisissant JavaScript et ReactJS pour mes débuts.</p>
