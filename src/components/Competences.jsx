@@ -1,58 +1,40 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { FiDownload } from 'react-icons/fi';
-import { FaRegEye } from 'react-icons/fa';
+import { GrMysql } from 'react-icons/gr';
+import { DiJsBadge, DiSass, DiReact, DiHtml5, DiCss3, DiNodejsSmall, DiBootstrap } from "react-icons/di";
 
 import '../styles/Competences.scss';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(1),
-    },
-  },
-}));
-
 const Competences = () => {
-  const classes = useStyles();
   return (
     <div className="Competences" id="competences-section">
       <Container className="competences">
-        <h1>Compétences</h1>
         <Row>
-          <Col className="tools" xl="10" lg="10" md="10" sm="8" xs="8">
-            <img className="logos" src="/medias/logos/logo-html.png" alt="logo-html" />
-            <img className="logos" src="/medias/logos/logo-css.png" alt="logo-css" />
-            <img className="logos" src="/medias/logos/logo-js.png" alt="logo-js" />
-            <img className="logos" src="/medias/logos/logo-react.png" alt="logo-react" />
-            <img className="logos" src="/medias/logos/logo-reactstrap.png" alt="logo-reactstrap" />
-            <img className="logos" src="/medias/logos/logo-sass.png" alt="logo-sass" />
-            <img className="logos" src="/medias/logos/logo-nodejs.png" alt="logo-nodejs" />
-            <img className="logos" src="/medias/logos/logo-express.png" alt="logo-express" />
-            <img className="logos" src="/medias/logos/logo-mysql.png" alt="logo-mysql" />
-            <img className="logos" src="/medias/logos/logo-sql.png" alt="logo-sql" />
+          <Col xl="6" lg="6" md="6" sm="12" xs="12" className="text">
+            <Row className="sub-title">
+              <h2>Compétences</h2>
+            </Row>
+            <Row>
+              <p>Les technologies utilisées :</p>
+              <p>JavaScript, ReactJS, Scss, HTML5, CSS3, Bootstrap/Reactstrap, MySQL/SQL, NodeJS/Express.</p>
+            </Row>
+          </Col>
+          <Col className="tools" xl="6" lg="6" md="6" sm="8" xs="8">
+            <DiJsBadge className="logo js" />
+            <DiReact className="logo react" />
+            <DiSass className="logo sass" />
+            <DiHtml5 className="logo html" />
+            <DiCss3 className="logo css" />
+            <DiBootstrap className="logo bootstrap" />
+            <GrMysql className="logo mysql" />
+            <DiNodejsSmall className="logo node" />
           </Col>
         </Row>
         <Row>
-          <Col xl="1" lg="1" md="1" sm="2" xs="2" />
-          <Col className={classes.root} xl="10" lg="10" md="10" sm="8" xs="8">
-            <Button variant="outlined" href="/medias/curriculum_vitae.pdf" download>
-              <FiDownload style={{ fontSize: "20px", marginRight: "10px" }} /> Télécharger mon CV
+          <Button variant="outlined" href="/cv" >
+            Vers mon CV
               </Button>
-          </Col>
-          <Col xl="1" lg="1" md="1" sm="2" xs="2" />
-        </Row>
-          <p>Ou simplement</p>
-          <Row>
-          <Col xl="1" lg="1" md="1" sm="2" xs="2" />
-          <Col className={classes.root} xl="10" lg="10" md="10" sm="8" xs="8">
-            <Button variant="outlined" href="/cv" >
-              <FaRegEye style={{ fontSize: "20px", marginRight: "10px" }} /> Visualiser mon CV
-              </Button>
-          </Col>
-          <Col xl="1" lg="1" md="1" sm="2" xs="2" />
         </Row>
       </Container>
     </div>

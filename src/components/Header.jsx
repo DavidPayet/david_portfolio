@@ -15,7 +15,7 @@ function Header() {
             <p>DAVID, DEVELOPPEUR WEB</p>
           </Row>
           <Row className="row3">
-            <p>Javascript | ReactJS</p>
+            <p>JavaScript | ReactJS</p>
           </Row>
         </div>
       </Container>
