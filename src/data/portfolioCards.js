@@ -2,7 +2,7 @@ const portfolioCards = [
   {
     id: "1",
     photo: "/medias/miniapps.jpeg",
-    title: "My First Apps",
+    title: "MY FIRST APPS",
     description: "Regroupement de mes premières applications en ReactJS.",
     link: "/miniapps",
     target: "",
@@ -11,7 +11,7 @@ const portfolioCards = [
   {
     id: "2",
     photo: "/medias/cvd.jpeg",
-    title: "CVD live stats",
+    title: "CVD LIVE STATS",
     description: "Statistiques et localisation des cas Covid-19. Utilisation de ChartJS et Mapbox Gl.",
     link: "https://cvd-live-stats.netlify.app",
     target: "_blank",
@@ -29,7 +29,7 @@ const portfolioCards = [
   {
     id: "4",
     photo: "/medias/chessPlayers-img.jpg",
-    title: "Chess Players data",
+    title: "CHESS PLAYERS DATA",
     description: "Démo Vidéo, Récupération de données de joueurs d'échecs en nodeJS et requêtes SQL.",
     link: "/chessplayers",
     target: "",

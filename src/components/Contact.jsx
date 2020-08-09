@@ -43,7 +43,7 @@ export default class Contact extends React.Component {
     return (
       <div className="Contact" id="contact-section">
         <Container className="contact">
-          <h1>Me contacter</h1>
+          <h2>CONTACT</h2>
           <Row>
             <Col xl="6" lg="6" md="6" sm="12" xs="12" >
               <form

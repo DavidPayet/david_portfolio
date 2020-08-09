@@ -8,24 +8,21 @@
   -webkit-transform: skewy(4deg 0);
   transform: skewy(4deg 0);
   margin-top: -45px;
+  color: white;
 
   .contact {
     -webkit-transform: skewy(-4deg 0);
     transform: skewy(-4deg 0);
+    padding: 0 90px;
 
-    h1 {
-      color: white;
-      padding-bottom: 100px;
+    h2 {
+      margin: 20px 0 110px 0;
       font-weight: lighter;
       letter-spacing: 0.1em;
-    }
-
-    .media {
-      max-width: 100%;
-      height: auto;
-      border-radius: 2px;
-      box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.507);
-      margin-bottom: 40px;
+      font-size: 20px;
+      padding-bottom: 1em;
+      border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+      text-align: left;
     }
 
     .fields {

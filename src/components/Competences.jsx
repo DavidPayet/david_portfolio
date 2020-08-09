@@ -13,7 +13,7 @@ const Competences = () => {
         <Row>
           <Col xl="6" lg="6" md="6" sm="12" xs="12" className="text">
             <Row className="sub-title">
-              <h2>Compétences</h2>
+              <h2>COMPÉTENCES</h2>
             </Row>
             <Row>
               <p>Les technologies utilisées :</p>
