@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import TicTacToeBoard from './TicTacToeBoard';
+import Button from '@material-ui/core/Button';
 
 import '../styles/TicTacToe.scss';
 

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import ChronometerElapsedTime from './ChronometerElapsedTime';
 import ChronometerButton from './ChronometerButton';
+import Button from '@material-ui/core/Button';
+import { AiOutlineReload } from 'react-icons/ai';
 
 import '../styles/Chronometer.scss';
 
@@ -46,13 +48,6 @@ class Chronometer extends Component {
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col xl="8" lg="8" md="8" sm="10" xs="10">
-              <h2>Chronometer</h2>
-            </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-          </Row>
-          <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <ChronometerElapsedTime
                 timingEvents={this.state.timingEvents}
               />
@@ -62,7 +57,9 @@ class Chronometer extends Component {
           <Row>
             <Col xl="4" lg="4" md="4" sm="2" xs="2" />
             <Col xl="2" lg="2" md="2" sm="4" xs="4">
-              <button onClick={this.resetClick}>&#8635;</button>
+              <Button onClick={this.resetClick} className="btn">
+                <AiOutlineReload />
+              </Button>
             </Col>
             <Col xl="2" lg="2" md="2" sm="4" xs="4">
               <ChronometerButton

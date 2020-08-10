@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import gifs from '../data/gif.js';
+import Button from '@material-ui/core/Button';
 
 import '../styles/Gif.scss';
 

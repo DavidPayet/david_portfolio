@@ -10,14 +10,13 @@ import Box from '@material-ui/core/Box';
 import Calculator from '../components/Calculator';
 import Counter from '../components/Counter';
 import Chronometer from '../components/Chronometer';
-import DatePicker from '../components/DatePicker';
 import Gif from '../components/Gif';
 import Imc from '../components/Imc';
-import NavApp from '../components/NavApp';
 import PomodoroClock from '../components/PomodoroClock';
 import SnakeGame from '../components/SnakeGame';
 import TicTacToe from '../components/TicTacToe';
 import TodoList from '../components/TodoList';
+import BackToHome from '../components/BackToHome';
 
 import '../styles/MiniAppsPage.scss'
 
@@ -76,9 +75,9 @@ const MiniAppsPage = () => {
 
   return (
     <div className="MiniAppsPage">
-      <NavApp />
       <Container className="miniAppsPage">
-        <h1>Mini Apps</h1>
+        <BackToHome />
+        <h2>Mini Apps</h2>
         <Row>
           <Col xl="2" lg="2" md="2" sm="12" xs="12">
             <Tabs
@@ -94,11 +93,10 @@ const MiniAppsPage = () => {
               <Tab label="Calculatrice" {...a11yProps(2)} />
               <Tab label="Tic Tac Toe" {...a11yProps(3)} />
               <Tab label="Snake" {...a11yProps(4)} />
-              <Tab label="Date Picker" {...a11yProps(5)} />
-              <Tab label="IMC" {...a11yProps(6)} />
-              <Tab label="Compteur" {...a11yProps(7)} />
-              <Tab label="Chronomèter" {...a11yProps(8)} />
-              <Tab label="Pomodoro" {...a11yProps(9)} />
+              <Tab label="IMC" {...a11yProps(5)} />
+              <Tab label="Compteur" {...a11yProps(6)} />
+              <Tab label="Chronomèter" {...a11yProps(7)} />
+              <Tab label="Pomodoro" {...a11yProps(8)} />
             </Tabs>
           </Col>
           <Col xl="10" lg="10" md="10" sm="12" xs="12">
@@ -118,18 +116,15 @@ const MiniAppsPage = () => {
               <SnakeGame />
             </TabPanel>
             <TabPanel value={value} index={5}>
-              <DatePicker />
-            </TabPanel>
-            <TabPanel value={value} index={6}>
               <Imc />
             </TabPanel>
-            <TabPanel value={value} index={7}>
+            <TabPanel value={value} index={6}>
               <Counter />
             </TabPanel>
-            <TabPanel value={value} index={8}>
+            <TabPanel value={value} index={7}>
               <Chronometer />
             </TabPanel>
-            <TabPanel value={value} index={9}>
+            <TabPanel value={value} index={8}>
               <PomodoroClock />
             </TabPanel>
           </Col>

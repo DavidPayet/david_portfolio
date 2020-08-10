@@ -1,46 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Turret+Road:500&display=swap');
-
 .Counter {
-  background-color: rgb(33, 62, 73);
-  border-radius: 3px;
-  margin-bottom: 40px;
-  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.507);
+  min-height: 400px;
+  padding: 70px 0;
+  width: 100%;
+  background-color: rgb(54, 56, 72);
 
   .counter {
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    h2 {
-      font-family: 'Turret Road', cursive;
-      color: rgb(177, 194, 38);
-      padding-bottom: 40px;
-    }
-
     .result {
-      font-family: 'Turret Road', cursive;
       font-size: 60px;
-      color: rgb(177, 194, 38);
-      text-shadow: 0 0 5px rgba(241, 241, 243, 0.178);
+      color: rgb(251, 172, 95);
     }
 
     .row {
       padding-top: 40px;
 
       .btn {
-        height: 50px;
-        width: 80px;
-        border-radius: 2px;
-        background-color: rgb(83, 180, 244);
-        color: rgb(241, 241, 243);
-        border: none;
-        margin: 4px;
-        font-size: 30px;
-        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.507);
+        height: 40px;
+        width: 60px;
+        border: solid 2px rgba(255, 255, 255, 0.384);
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+        letter-spacing: 0.1em;
+        background-color: transparent;
+
       }
 
-      .btn:hover {
-        background-color: rgb(66, 151, 207);
-        transition: .1s ease-out;
+      .btn:focus {
+        box-shadow: none;
       }
     }
   }
