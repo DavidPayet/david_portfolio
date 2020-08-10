@@ -1,19 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
 .TodoList {
   min-height: 400px;
   padding-top: 70px;
   width: 100%;
-  background: linear-gradient(to left, #c5d5cb, #e3e0cf);
+  background-color: rgb(54, 56, 72);
 
   .todoList {
-    h1 {
-      color: rgb(33, 62, 73);
-      font-family: 'Lato';
-      font-weight: bold;
-      padding-bottom: 100px;
-    }
-
     .form {
       align-items: center;
       justify-content: center;
@@ -21,32 +12,40 @@
       padding-bottom: 50px;
 
       input {
-        font-size: 23px;
-        color: rgb(33, 62, 73);
         max-width: 300px;
-        padding: 0px;
-        border: none;
-        border-radius: 5px 0px 0px 5px;
+        appearance: none;
+        background: rgba(255, 255, 255, 0.055);
+        border-radius: 5px;
+        border: solid 2px rgba(255, 255, 255, 0.384);
+        color: white;
+        outline: 0;
+        padding: 0 1em;
+        text-decoration: none;
+        width: 100%;
+        height: 2.75em;
+        font-weight: lighter;
+        letter-spacing: 0.1em;
       }
 
       .addBtn {
         height: 48.5px;
         width: 52px;
-        background-color: rgb(33, 62, 73);
-        color: white;
+        color: rgba(255, 255, 255, 0.384);
         border: none;
-        border-radius: 0px 5px 5px 0px;
         cursor: pointer;
+        font-weight: lighter;
       }
 
       .addBtn:hover {
-        background-color: rgb(66, 151, 207);
+        color: white;
         transition: .1s ease-out;
       }
     }
 
     .list {
-      color: rgb(33, 62, 73);
+      color: white;
+      font-weight: lighter;
+      letter-spacing: 0.1em;
 
       .todo-text {
         font-size: 23px;
@@ -71,6 +70,8 @@
         border: 0px;
         margin: none;
         cursor: pointer;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 0.384);
       }
 
       .deleteBtn:hover {

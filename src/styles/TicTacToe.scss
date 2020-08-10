@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
 .TicTacToe {
-  padding-top: 70px;
+  min-height: 400px;
+  padding: 70px 0;
   width: 100%;
-  background: linear-gradient(to left, #c5d5cb, #e3e0cf);
-  padding-bottom: 130px;
+  background-color: rgb(54, 56, 72);
 
   .ticTacToe {
     h3 {
       padding-bottom: 75px;
-      color: rgb(33, 62, 73);
-      font-family: 'Lato';
-      font-weight: bold;
+      color: white;
+      font-weight: lighter;
+      letter-spacing: 0.1em;
     }
 
     .square {
-      background: rgb(33, 62, 73);
-      color: rgb(83, 180, 244);
-      border: 1px solid #999;
+      background: transparent;
+      border-radius: 5px;
+      border: solid 2px rgba(255, 255, 255, 0.384);
+      color: rgb(251, 172, 95);
       float: left;
       font-size: 50px;
       font-weight: bold;
@@ -32,7 +31,8 @@
     }
 
     .square:hover {
-      background-color: rgb(33, 62, 73);
+      background-color: rgba(255, 255, 255, 0.055);
+      ;
       transition: none;
     }
 
@@ -79,16 +79,13 @@
 
     button {
       height: 40px;
-      width: 100px;
-      font-family: 'Lato';
-      background-color: rgb(33, 62, 73);
-      color: rgb(241, 241, 243);
-      border: none;
-    }
-
-    button:hover {
-      background-color: rgb(66, 151, 207);
-      transition: .1s ease-out;
+      width: 150px;
+      border: solid 2px rgba(255, 255, 255, 0.384);
+      color: white;
+      font-size: 18px;
+      font-weight: lighter;
+      letter-spacing: 0.1em;
+      background-color: transparent;
     }
 
     button:focus {

@@ -1,14 +1,17 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+import { FaPlay, FaPause } from 'react-icons/fa';
+
 
 export default function ChronometerButton(props) {
   const label = props.timingEvents.length % 2 === 0
-    ? <span>&#9658;</span>
-    : <span>&#10074;&#10074;</span>;
+    ? <FaPlay />
+    : <FaPause />;
   return (
     <div>
-      <button onClick={props.handleClick}>
+      <Button onClick={props.handleClick} className="btn">
         {label}
-      </button>
+      </Button>
     </div>
   )
 }

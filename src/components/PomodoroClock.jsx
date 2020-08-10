@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import moment from 'moment';
+import Button from '@material-ui/core/Button';
+import { FaPlay, FaPause } from 'react-icons/fa';
+import { AiOutlineReload } from 'react-icons/ai';
+import { TiArrowSortedUp, TiArrowSortedDown } from 'react-icons/ti';
 
 import '../styles/PomodoroClock.scss';
 
@@ -9,19 +13,19 @@ const SetTimer = ({ type, label, value, handleClick }) => (
     <div className="setTimer-label" id={`${type}-label`}>{label}</div>
     <br />
     <div className="setTimer-controls">
-      <button
+      <Button
         className="setTimer-controls-btn"
         id={`${type}-increment`}
         onClick={() => handleClick(true, `${type}Value`)}>
-        &uarr;
-      </button>
+        <TiArrowSortedUp />
+      </Button>
       <h3 className="setTimer-value" id={`${type}-length`}>{value}</h3>
-      <button
+      <Button
         className="setTimer-controls-btn"
         id={`${type}-decrement`}
         onClick={() => handleClick(false, `${type}Value`)}>
-        &darr;
-      </button>
+        <TiArrowSortedDown />
+      </Button>
     </div>
   </div>
 );
@@ -35,9 +39,9 @@ const Timer = ({ mode, time }) => (
 
 const Controls = ({ active, handlePlayPause }) => (
   <div>
-    <button id="start_stop" onClick={handlePlayPause}>
-      {active ? <span>&#10074;&#10074;</span> : <span>&#9658;</span>}
-    </button>
+    <Button id="start_stop" onClick={handlePlayPause} className="btn">
+      {active ? <FaPlay /> : <FaPause />}
+    </Button>
   </div>
 );
 
@@ -111,13 +115,6 @@ class PomodoroClock extends Component {
           <Row>
             <Col xl="2" lg="2" md="2" sm="1" xs="1" />
             <Col xl="8" lg="8" md="8" sm="10" xs="10">
-              <h2>Pomodoro Clock</h2>
-            </Col>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-          </Row>
-          <Row>
-            <Col xl="2" lg="2" md="2" sm="1" xs="1" />
-            <Col xl="8" lg="8" md="8" sm="10" xs="10">
               <Timer
                 className="timer"
                 mode={this.state.mode}
@@ -129,7 +126,9 @@ class PomodoroClock extends Component {
           <Row>
             <Col xl="4" lg="4" md="4" sm="2" xs="2" />
             <Col xl="2" lg="2" md="2" sm="4" xs="4">
-              <button id="reset" onClick={this.handleReset}>&#8635;</button>
+              <Button id="reset" onClick={this.handleReset} className="btn">
+                <AiOutlineReload />
+              </Button>
             </Col>
             <Col xl="2" lg="2" md="2" sm="4" xs="4">
               <Controls
