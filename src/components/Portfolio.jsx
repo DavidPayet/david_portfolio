@@ -23,7 +23,7 @@ const Portfolio = () => {
         <h2>PORTFOLIO</h2>
         <Row>
           {portfolioCards.map(portfolioCard => (
-            <Col xl="6" lg="6" md="6" sm="12" xs="12"
+            <Col xl="6" lg="6" md="12" sm="12" xs="12"
               key={portfolioCard.id}
             >
               <Card>
@@ -44,7 +44,7 @@ const Portfolio = () => {
                     href={portfolioCard.link}
                     target={portfolioCard.target}
                     rel={portfolioCard.rel}>
-                    <MdKeyboardArrowRight className="right-arrow"/> Voir
+                    <MdKeyboardArrowRight className="right-arrow" /> Voir
                     </Button>
                 </CardBody>
               </Card>

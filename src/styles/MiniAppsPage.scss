@@ -1,14 +1,14 @@
 .MiniAppsPage {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 0;
   background-color: rgb(47, 49, 64);
   color: white;
+  min-height: 1000px;
 
   .miniAppsPage {
     padding: 0 90px;
 
     h2 {
-      margin: 80px 0 80px 0;
+      margin: 80px 0;
       font-weight: lighter;
       letter-spacing: 0.1em;
       font-size: 20px;
@@ -38,8 +38,17 @@
   }
 
   @media screen and (max-width: 640px) {
-    .miniAppsPage {
+    .MiniAppsPage {
+      min-width: 640px;
       padding: 0;
+
+      .miniAppsPage.container{
+        padding: 0;
+
+        h2 {
+          margin: 80px 40px;
+        }
+      }
     }
   }
 }

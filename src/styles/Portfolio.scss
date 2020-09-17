@@ -5,7 +5,7 @@
   color: white;
   -webkit-transform: skewy(4deg);
   transform: skewy(4deg);
-  margin-top: -45px;
+  margin-top: -70px;
 
   .portfolio {
     -webkit-transform: skewy(-4deg);
@@ -90,8 +90,13 @@
       }
 
       .card {
-        margin-left: 0;
-        margin-right: 0;
+        margin: 30px 0;
+      }
+    }
+
+    @media screen and (min-width: 640px) and (max-width: 768px) {
+      .card {
+        margin: 30px 100px;
       }
     }
   }

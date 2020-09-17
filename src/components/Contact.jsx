@@ -131,7 +131,7 @@ export default class Contact extends React.Component {
           </Row>
           <Row className="footer">
             <ul >
-              <li>©Copyright 2020 - All right reserved</li>
+              <li>©Copyright 2020</li>
               <li>Davi<img className="dp-logo" src="/medias/dp-logo2.png" alt="dp-logo" />ayet</li>
             </ul>
           </Row>

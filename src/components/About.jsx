@@ -8,10 +8,10 @@ const About = () => {
     <div className="About" id="about-section">
       <Container className="about">
         <Row>
-          <Col xl="4" lg="4" md="4" sm="12" xs="12" className="photo-col">
+          <Col xl="4" lg="4" md="12" sm="12" xs="12" className="photo-col">
             <img className="photo" src="/medias/photo.png" alt="myphoto" />
           </Col>
-          <Col xl="8" lg="8" md="8" sm="12" xs="12" className="text">
+          <Col xl="8" lg="8" md="12" sm="12" xs="12" className="text">
             <Row className="sub-title">
               <h2>A PROPOS</h2>
             </Row>

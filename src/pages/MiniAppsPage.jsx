@@ -79,7 +79,7 @@ const MiniAppsPage = () => {
         <BackToHome />
         <h2>Mini Apps</h2>
         <Row>
-          <Col xl="2" lg="2" md="2" sm="12" xs="12">
+          <Col style={{ padding: "0px" }} xl="2" lg="2" md="3" sm="12" xs="12">
             <Tabs
               orientation="vertical"
               variant="scrollable"
@@ -95,11 +95,11 @@ const MiniAppsPage = () => {
               <Tab label="Snake" {...a11yProps(4)} />
               <Tab label="IMC" {...a11yProps(5)} />
               <Tab label="Compteur" {...a11yProps(6)} />
-              <Tab label="Chronomèter" {...a11yProps(7)} />
+              <Tab label="Chronomètre" {...a11yProps(7)} />
               <Tab label="Pomodoro" {...a11yProps(8)} />
             </Tabs>
           </Col>
-          <Col xl="10" lg="10" md="10" sm="12" xs="12">
+          <Col style={{ padding: "0px" }} xl="10" lg="10" md="9" sm="12" xs="12">
             <TabPanel value={value} index={0}>
               <TodoList />
             </TabPanel>

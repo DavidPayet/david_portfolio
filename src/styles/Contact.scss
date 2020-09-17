@@ -7,7 +7,7 @@
   background-size: cover;
   -webkit-transform: skewy(4deg 0);
   transform: skewy(4deg 0);
-  margin-top: -45px;
+  margin-top: -70px;
   color: white;
 
   .contact {
@@ -107,6 +107,12 @@
 
       ul {
         padding-inline-start: 0px;
+      }
+
+      @media screen and (max-width: 640px) {
+        .row {
+          justify-content: center;
+        }
       }
 
     }
