@@ -11,7 +11,7 @@ const Competences = () => {
     <div className="Competences" id="competences-section">
       <Container className="competences">
         <Row>
-          <Col xl="6" lg="6" md="6" sm="12" xs="12" className="text">
+          <Col xl="6" lg="6" md="12" sm="12" xs="12" className="text">
             <Row className="sub-title">
               <h2>COMPÉTENCES</h2>
             </Row>
@@ -20,7 +20,7 @@ const Competences = () => {
               <p>JavaScript, ReactJS, Scss, HTML5, CSS3, Bootstrap/Reactstrap, MySQL/SQL, NodeJS/Express.</p>
             </Row>
           </Col>
-          <Col className="tools" xl="6" lg="6" md="6" sm="8" xs="8">
+          <Col className="tools" xl="6" lg="6" md="12" sm="12" xs="12">
             <DiJsBadge className="logo js" />
             <DiReact className="logo react" />
             <DiSass className="logo sass" />
