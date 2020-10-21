@@ -25,6 +25,7 @@ const Portfolio = () => {
           {portfolioCards.map(portfolioCard => (
             <Col xl="6" lg="6" md="12" sm="12" xs="12"
               key={portfolioCard.id}
+              className="oneCard"
             >
               <Card>
                 <a href={portfolioCard.link}

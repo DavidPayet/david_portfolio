@@ -45,7 +45,7 @@ export default class Contact extends React.Component {
         <Container className="contact">
           <h2>CONTACT</h2>
           <Row>
-            <Col xl="6" lg="6" md="6" sm="12" xs="12" >
+            <Col xl="6" lg="6" md="6" sm="12" xs="12" className="contactForm">
               <form
                 onSubmit={this.handleSubmit}
                 name="contactform"
@@ -95,37 +95,27 @@ export default class Contact extends React.Component {
             </Col>
             <Col className="info" xl="6" lg="6" md="6" sm="12" xs="12" >
               <ul>
-                <Row>
-                  <li>
-                    <BsGeo className="icons" />33000, Bordeaux
+                <li>
+                  <BsGeo className="icons" />33000, Bordeaux
                 </li>
-                </Row>
-                <Row>
-                  <li>
-                    <a href="mailto:davidpayet570@gmail.com">
-                      <FiMail className="icons" />davidpayet570@gmail.com
+                <li>
+                  <a href="mailto:davidpayet570@gmail.com">
+                    <FiMail className="icons" />davidpayet570@gmail.com
                     </a>
-                  </li>
-                </Row>
-                <Row>
-                  <li>
-                    <FiPhone className="icons" />+33 6 20 38 42 33
                 </li>
-                </Row>
-                <Row>
-                  <li>
-                    <a href="https://www.linkedin.com/in/david-payet/" target="_blank" rel="noopener noreferrer">
-                      <FaLinkedin className="icons" />www.linkedin.com/in/david-payet
+                <li>
+                  <FiPhone className="icons" />+33 6 20 38 42 33
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/david-payet/" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin className="icons" />www.linkedin.com/in/david-payet
                     </a>
-                  </li>
-                </Row>
-                <Row>
-                  <li>
-                    <a href="https://github.com/DavidPayet" target="_blank" rel="noopener noreferrer">
-                      <FiGithub className="icons" />https://github.com/DavidPayet
+                </li>
+                <li>
+                  <a href="https://github.com/DavidPayet" target="_blank" rel="noopener noreferrer">
+                    <FiGithub className="icons" />https://github.com/DavidPayet
                     </a>
-                  </li>
-                </Row>
+                </li>
               </ul>
             </Col>
           </Row>

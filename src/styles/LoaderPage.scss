@@ -1,0 +1,80 @@
+.LoaderPage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(47, 49, 64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  
+  .letter {
+    color: #484848;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+    font-size: clamp(1rem, 5vw, 5rem);
+  }
+
+  @keyframes flash {
+    0% {
+      color: rgb(255, 163, 82);
+      text-shadow: 0 0 7px rgb(255, 163, 82);
+    }
+
+    90% {
+      color: #484848;
+      text-shadow: none;
+    }
+
+    100% {
+      color: rgb(255, 163, 82);
+      text-shadow: 0 0 7px rgb(255, 163, 82);
+    }
+  }
+
+  .letter:nth-child(1) {
+    animation-delay: .1s;
+  }
+
+  .letter:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .letter:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .letter:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .letter:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  .letter:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+
+  .letter:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+
+  .letter:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+
+  .letter:nth-child(9) {
+    animation-delay: 0.9s;
+  }
+
+  .letter:nth-child(10) {
+    animation-delay: 1s;
+  }
+  
+  .fondu-out {
+    opacity: 0;
+    transition: opacity .3s ease-out;
+  }
+}
